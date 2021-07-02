@@ -1,0 +1,20 @@
+<div class="popUp">
+  <form action="/login" method="POST" class="login-form">
+    <label>Username</label>
+    <input type="text" name="username" required/>
+
+    <label>Email</label>
+    <input type="email" name="email" required/>
+
+    <label>Password</label>
+    <input type="password" name="password" required/>
+    <br>
+    <div class="button-login">
+    <button type="submit">Create Account</button>
+    </div>
+  </form>
+
+  {{#if errorMessage}}
+    <p>{{errorMessage}}</p>
+  {{/if}}
+</div>
