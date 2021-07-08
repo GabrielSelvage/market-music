@@ -1,1 +1,50 @@
-<h1>Teachers List</h1>
+<div class="container teacher-list">
+  {{#each teachers}}
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card card-teacher">
+          {{#if image_url}}
+          <img src="{{image_url}}" class="card-img-top">
+          {{/if}}
+          <div class="card-body">
+            <h5 class="card-title">{{username}}</h5>
+            <p class="card-text">{{description}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          {{#if image_url}}
+           <img src="{{image_url}}" class="card-img-top">
+          {{/if}}
+          <div class="card-body">
+            <h5 class="card-title">{{username}}</h5>
+            <p class="card-text">{{description}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          {{#if image_url}}
+          <img src="{{image_url}}" class="card-img-top">
+          {{/if}}
+          <div class="card-body">
+            <h5 class="card-title">{{username}}</h5>
+            <p class="card-text">{{description}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          {{#if image_url}}
+          <img src="{{image_url}}" class="card-img-top">
+          {{/if}}
+          <div class="card-body">
+            <h5 class="card-title">{{username}}</h5>
+            <p class="card-text">{{description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

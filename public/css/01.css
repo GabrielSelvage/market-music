@@ -1,0 +1,5909 @@
+/* TODO: GLOBALS */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Manrope:400,700,600|Playfair+Display:400,700,600,900");
+* {
+  box-sizing: border-box;
+}
+.screen * {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+.screen a {
+  text-decoration: none;
+  display: contents;
+}
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+input:focus {
+  outline: none;
+}
+
+/* FIXME: GLOBALS */
+
+
+
+
+
+/* TODO: STYLEGUIDE */
+:root {
+  --black: #000000;
+  --black-2: #0000004c;
+  --black-3: #00000099;
+  --black-4: #00000033;
+  --black-5: #000000b2;
+  --bunker: #141616;
+  --delta: #a3a3a3;
+  --masala: #3b3b3bb2;
+  --persian-green: #00a692;
+  --shark: #262626;
+  --white: #ffffff;
+  --white-2: #ffffffb2;
+  --woodsmoke: #0f0f0f;
+
+  --font-size-l: 18px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 20px;
+  --font-size-xs: 13px;
+  --font-size-xxl: 28px;
+  --font-size-xxs: 12px;
+
+  --font-family-manrope: "Manrope", Helvetica;
+  --font-family-playfair_display: "Playfair Display", Helvetica;
+}
+.playfairdisplay-normal-shark-16px {
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.manrope-normal-white-14px {
+  color: var(--white);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+.playfairdisplay-normal-black-16px {
+  color: var(--black-3);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.playfairdisplay-normal-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.playfairdisplay-bold-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+.playfairdisplay-normal-black-12px {
+  color: var(--black-5);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+.playfairdisplay-bold-shark-18px {
+  color: black;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+.playfairdisplay-black-shark-16px {
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 900;
+}
+.playfairdisplay-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+.playfairdisplay-normal-black-16px-2 {
+  color: var(--black);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.manrope-semi-bold-woodsmoke-14px {
+  color: var(--woodsmoke);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+}
+.manrope-normal-white-12px {
+  color: var(--white-2);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+.playfairdisplay-normal-delta-16px {
+  color: var(--delta);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.manrope-bold-persian-green-16px {
+  color: var(--persian-green);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+.playfairdisplay-bold-shark-20px {
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+.manrope-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+.border-1px-black-2 {
+  border: 1px solid var(--black-2);
+}
+.border-1px-black-4 {
+  border: 1px solid var(--black-4);
+}
+.border-1px-white {
+  border: 1px solid var(--white);
+}
+/* FIXME: STYLEGUIDE */
+
+
+
+
+
+/* TODO: HOME ANY USER */
+
+.x01 {
+  background-color: var(--bunker);
+  height: 100vh;
+  margin: 0px;
+  min-height: 939px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.x01 .become-a-student-iHeImT {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 44px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.x01 .become-a-student-iHeImT a{ 
+  text-decoration: none;
+  color: var(--white);
+}
+
+.x01 .become-a-teacher-r7XLmr a, .teach-classes-FL7y9N a{
+  color: var(--persian-green);
+}
+
+.x01 .become-a-teacher-r7XLmr {
+  background-color: transparent;
+  color: var(--persian-green);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 44px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  white-space: nowrap;
+  width: auto;
+}
+.x01 .categories-RayZU3 {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+
+.x01 .categories-RayZU3 a, .x01 .teachers-RayZU3 a, .categories-4A2KxQ a, .teachers-4A2KxQ a, .categories-bqxkKU a, .teachers-bqxkKU a{ 
+  color: white;
+}
+
+.x01 .categories-RayZU3:hover {
+
+transform: scale(1.1);
+}
+.x01 .frame-16-kpTK5L {
+  background-color: transparent;
+  border-radius: 20px;
+  height: 24px;
+  left: 23px;
+  position: absolute;
+  top: 10px;
+  width: 258px;
+}
+.x01 .frame-2-UxIqrW {
+  background-color: var(--persian-green);
+  border-radius: 20px;
+  height: 44px;
+  left: calc(50.00% - 257px);
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% + 368px);
+  transition: all 0.2s ease;
+  width: 236px;
+}
+.x01 .frame-2-UxIqrW:hover {
+
+transform: scale(1.1);
+}
+.x01 .frame-30-UxIqrW {
+  background-color: var(--white);
+  border-radius: 20px;
+  height: 44px;
+  left: calc(50.00% + 21px);
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% + 368px);
+  transition: all 0.2s ease;
+  width: 236px;
+}
+.x01 .frame-30-UxIqrW:hover {
+
+transform: scale(1.1);
+}
+.x01 .frame-333-myuIt9 {
+  background-color: transparent;
+  height: 42px;
+  left: 10px;
+  position: relative;
+  top: 10px;
+  width: 498px;
+}
+.x01 .frame-334-UxIqrW {
+  background-color: transparent;
+  height: 62px;
+  position: absolute;
+  right: 99px;
+  top: 16px;
+  width: 518px;
+}
+.x01 .frame-337-gqrss8 {
+  background-color: transparent;
+  height: 24px;
+  left: 208px;
+  position: absolute;
+  top: 6px;
+  width: 279px;
+}
+.x01 .frame-345-UxIqrW {
+  background-color: transparent;
+  height: 36px;
+  left: 108px;
+  position: absolute;
+  top: 29px;
+  width: 487px;
+}
+.x01 .group-112-J4GldP {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.x01 .group-115-p62cg2 {
+  background-color: transparent;
+  height: 50.00%;
+  left: 84.34%;
+  position: absolute;
+  top: 25.00%;
+  width: 4.42%;
+}
+.x01 .group-120-u3arvF {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 18px;
+}
+.x01 .group-251-eYkcwL {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+}
+.x01 .group-292-M9WXr4 {
+  background-color: transparent;
+  height: 42px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 388px;
+}
+.x01 .group-300-UxIqrW {
+  background-color: transparent;
+  height: 662px;
+  left: calc(50.00% - 588px);
+  overflow: hidden;
+  position: absolute;
+  top: calc(50.00% - 322px);
+  width: 1176px;
+}
+.x01 .group-301-p62cg2 {
+  background-color: transparent;
+  height: 42px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 388px;
+}
+.x01 .instruments-RayZU3 {
+  background-color: transparent;
+  height: auto;
+  left: 190px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+.x01 .instruments-RayZU3:hover {
+
+transform: scale(1.1);
+}
+.x01 .line-53-UxIqrW {
+  background-color: transparent;
+  height: 1px;
+  left: 0px;
+  position: absolute;
+  top: 939px;
+  width: 1440px;
+}
+.x01 .rectangle-140-gqrss8 {
+  background-color: transparent;
+  height: 36px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 181px;
+}
+.x01 .rectangle-287-UxIqrW {
+  background-color: var(--shark);
+  height: 104px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.x01 .rectangle-8-kpTK5L {
+  background-color: var(--masala);
+  border-radius: 20px;
+  height: 42px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 388px;
+}
+.x01 .teachers-RayZU3 {
+  background-color: transparent;
+  height: auto;
+  left: 101px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+.x01 .teachers-RayZU3:hover {
+
+transform: scale(1.1);
+}
+.x01 .user-p62cg2 {
+  background-color: transparent;
+  height: 24px;
+  left: 474px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 9px;
+  width: 24px;
+}
+.x01 .vector-DWCqrq {
+  background-color: transparent;
+  height: 33.33%;
+  left: 12.50%;
+  position: absolute;
+  top: 58.33%;
+  width: 75.00%;
+}
+.x01 .vector-Ha8xMx {
+  background-color: transparent;
+  height: 41.67%;
+  left: 29.17%;
+  position: absolute;
+  top: 8.33%;
+  width: 41.67%;
+}
+.x01 .vector-JdQlxx {
+  background-color: transparent;
+  height: 100.00%;
+  left: -6.95%;
+  position: absolute;
+  top: -5.56%;
+  width: 102.79%;
+}
+.x01 .vector-M8vShu {
+  background-color: transparent;
+  height: 80.95%;
+  left: -4.55%;
+  position: absolute;
+  top: -4.76%;
+  width: 109.09%;
+}
+.x01 .vector-Y9v8rA {
+  background-color: transparent;
+  height: 36.11%;
+  left: 68.47%;
+  position: absolute;
+  top: 69.86%;
+  width: 38.89%;
+}
+.x01 .vector-be8OxC {
+  background-color: transparent;
+  height: 19.05%;
+  left: 27.27%;
+  position: absolute;
+  top: 85.71%;
+  width: 18.18%;
+}
+.x01 .vector-zMYxN2 {
+  background-color: transparent;
+  height: 19.05%;
+  left: 77.27%;
+  position: absolute;
+  top: 85.71%;
+  width: 18.18%;
+}
+.x01 .what-do-you-wan-to-learn-today-eYkcwL {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 34px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 240px;
+}
+.x01 .what-do-you-wan-to-learn-today-eYkcwL::placeholder {
+  color: #a3a3a399;
+}
+
+/* FIXME: HOME ANY USER */
+
+
+
+
+
+/* TODO: STUDENTS HOME DESKTOP */
+
+.student-home-desktop {
+  background-color: var(--bunker);
+  height: 100vh;
+  margin: 0px;
+  min-height: 849px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.student-home-desktop .categories-4A2KxQ {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+.student-home-desktop .categories-4A2KxQ:hover {
+
+transform: scale(1.1);
+}
+.student-home-desktop .frame-16-VJA9E3 {
+  background-color: transparent;
+  border-radius: 20px;
+  height: 24px;
+  left: 23px;
+  position: absolute;
+  top: 10px;
+  width: 258px;
+}
+.student-home-desktop .frame-337-9D7SBr {
+  background-color: transparent;
+  height: 24px;
+  left: 208px;
+  position: absolute;
+  top: 6px;
+  width: 279px;
+}
+.student-home-desktop .frame-345-an9CBL {
+  background-color: transparent;
+  height: 36px;
+  left: 60px;
+  position: absolute;
+  top: 29px;
+  width: 487px;
+}
+.student-home-desktop .group-112-oVxsZG {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.student-home-desktop .group-120-xGEg8m {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 18px;
+}
+.student-home-desktop .group-292-fWlJCX {
+  background-color: transparent;
+  height: 42px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 388px;
+}
+.student-home-desktop .iconsearch-ExluHL {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+}
+.student-home-desktop .iconshoppingcart-FL7y9N {
+  background-color: transparent;
+  height: 50.00%;
+  left: 88.54%;
+  position: absolute;
+  top: 25.00%;
+  width: 3.60%;
+}
+.student-home-desktop .iconuser-FL7y9N {
+  background-color: transparent;
+  height: 24px;
+  left: 587px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 9px;
+  width: 24px;
+}
+.student-home-desktop .instruments-4A2KxQ {
+  background-color: transparent;
+  height: auto;
+  left: 190px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+.student-home-desktop .instruments-4A2KxQ:hover {
+
+transform: scale(1.1);
+}
+.student-home-desktop .logo-9D7SBr {
+  background-color: transparent;
+  height: 36px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 181px;
+}
+.student-home-desktop .pesquisacompletanavbar-an9CBL {
+  background-color: transparent;
+  height: 42px;
+  position: absolute;
+  right: 60px;
+  top: 26px;
+  width: 611px;
+}
+.student-home-desktop .rectangle-287-an9CBL {
+  background-color: var(--shark);
+  height: 104px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.student-home-desktop .rectangle-8-VJA9E3 {
+  background-color: var(--masala);
+  border-radius: 20px;
+  height: 42px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 388px;
+}
+.student-home-desktop .searchbar-FL7y9N {
+  background-color: transparent;
+  height: 42px;
+  left: 129px;
+  position: absolute;
+  top: 0px;
+  width: 388px;
+}
+.student-home-desktop .teach-classes-FL7y9N {
+  background-color: transparent;
+  color: #2de3cd;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 900;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  transition: all 0.2s ease;
+  width: auto;
+}
+.student-home-desktop .teach-classes-FL7y9N:hover {
+
+transform: scale(1.1);
+}
+.student-home-desktop .teachers-4A2KxQ {
+  background-color: transparent;
+  height: auto;
+  left: 101px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+.student-home-desktop .teachers-4A2KxQ:hover {
+
+transform: scale(1.1);
+}
+.student-home-desktop .vector-9VusJ2 {
+  background-color: transparent;
+  height: 41.67%;
+  left: 29.17%;
+  position: absolute;
+  top: 8.33%;
+  width: 41.67%;
+}
+.student-home-desktop .vector-BPGSip {
+  background-color: transparent;
+  height: 80.95%;
+  left: -4.55%;
+  position: absolute;
+  top: -4.76%;
+  width: 109.09%;
+}
+.student-home-desktop .vector-LmeCyi {
+  background-color: transparent;
+  height: 100.00%;
+  left: -6.95%;
+  position: absolute;
+  top: -5.56%;
+  width: 102.79%;
+}
+.student-home-desktop .vector-T3bZqP {
+  background-color: transparent;
+  height: 36.11%;
+  left: 68.47%;
+  position: absolute;
+  top: 69.86%;
+  width: 38.89%;
+}
+.student-home-desktop .vector-hOumd0 {
+  background-color: transparent;
+  height: 19.05%;
+  left: 27.27%;
+  position: absolute;
+  top: 85.71%;
+  width: 18.18%;
+}
+.student-home-desktop .vector-pMBZUZ {
+  background-color: transparent;
+  height: 33.33%;
+  left: 12.50%;
+  position: absolute;
+  top: 58.33%;
+  width: 75.00%;
+}
+.student-home-desktop .vector-xkxnCu {
+  background-color: transparent;
+  height: 19.05%;
+  left: 77.27%;
+  position: absolute;
+  top: 85.71%;
+  width: 18.18%;
+}
+.student-home-desktop .what-do-you-wan-to-learn-today-ExluHL {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 34px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 240px;
+}
+.student-home-desktop .what-do-you-wan-to-learn-today-ExluHL::placeholder {
+  color: #a3a3a399;
+}
+.student-home-desktop .youtubevideohero-an9CBL {
+  background-color: transparent;
+  height: 662px;
+  left: calc(50.00% - 588px);
+  overflow: hidden;
+  position: absolute;
+  top: calc(50.00% - 284px);
+  width: 1176px;
+}
+
+/* FIXME: STUDENTS HOME DESKTOP */
+
+
+
+
+
+/* TODO: TEACHERS HOME DESKTOP */
+
+
+.teacher-home-desktop {
+  background-color: var(--bunker);
+  height: 100vh;
+  margin: 0px;
+  min-height: 841px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.teacher-home-desktop .categories-bqxkKU {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+.teacher-home-desktop .categories-bqxkKU:hover {
+
+transform: scale(1.1);
+}
+.teacher-home-desktop .frame-16-5QWjhz {
+  background-color: transparent;
+  border-radius: 20px;
+  height: 24px;
+  left: 23px;
+  position: absolute;
+  top: 10px;
+  width: 258px;
+}
+.teacher-home-desktop .frame-337-ADDDp1 {
+  background-color: transparent;
+  height: 24px;
+  left: 208px;
+  position: absolute;
+  top: 6px;
+  width: 279px;
+}
+.teacher-home-desktop .frame-345-nfp9la {
+  background-color: transparent;
+  height: 36px;
+  left: 60px;
+  position: absolute;
+  top: 29px;
+  width: 487px;
+}
+.teacher-home-desktop .group-112-2SfmuN {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.teacher-home-desktop .group-120-pFSMhb {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 18px;
+}
+.teacher-home-desktop .group-292-dGZSb1 {
+  background-color: transparent;
+  height: 42px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 388px;
+}
+.teacher-home-desktop .iconsearch-KOSCQa {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  position: absolute;
+  top: 3px;
+  width: 18px;
+}
+.teacher-home-desktop .iconshoppingcart-yK3YxJ {
+  background-color: transparent;
+  height: 50.00%;
+  left: 85.48%;
+  position: absolute;
+  top: 25.00%;
+  width: 4.56%;
+}
+.teacher-home-desktop .iconuser-yK3YxJ {
+  background-color: transparent;
+  height: 24px;
+  left: 458px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 9px;
+  width: 24px;
+}
+.teacher-home-desktop .instruments-bqxkKU {
+  background-color: transparent;
+  height: auto;
+  left: 190px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+.teacher-home-desktop .instruments-bqxkKU:hover {
+
+transform: scale(1.1);
+}
+.teacher-home-desktop .logo-ADDDp1 {
+  background-color: transparent;
+  height: 36px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 181px;
+}
+.teacher-home-desktop .pesquisacompletanavbar-nfp9la {
+  background-color: transparent;
+  height: 42px;
+  position: absolute;
+  right: 60px;
+  top: 26px;
+  width: 482px;
+}
+.teacher-home-desktop .rectangle-287-nfp9la {
+  background-color: var(--shark);
+  height: 104px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.teacher-home-desktop .rectangle-8-5QWjhz {
+  background-color: var(--masala);
+  border-radius: 20px;
+  height: 42px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 388px;
+}
+.teacher-home-desktop .searchbar-yK3YxJ {
+  background-color: transparent;
+  height: 42px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 388px;
+}
+.teacher-home-desktop .teachers-bqxkKU {
+  background-color: transparent;
+  height: auto;
+  left: 101px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
+}
+.teacher-home-desktop .teachers-bqxkKU:hover {
+
+transform: scale(1.1);
+}
+.teacher-home-desktop .vector-EtmMiy {
+  background-color: transparent;
+  height: 100.00%;
+  left: -6.95%;
+  position: absolute;
+  top: -5.56%;
+  width: 102.79%;
+}
+.teacher-home-desktop .vector-QFDO4z {
+  background-color: transparent;
+  height: 33.33%;
+  left: 12.50%;
+  position: absolute;
+  top: 58.33%;
+  width: 75.00%;
+}
+.teacher-home-desktop .vector-REGxGr {
+  background-color: transparent;
+  height: 19.05%;
+  left: 77.27%;
+  position: absolute;
+  top: 85.71%;
+  width: 18.18%;
+}
+.teacher-home-desktop .vector-WDIpdS {
+  background-color: transparent;
+  height: 36.11%;
+  left: 68.47%;
+  position: absolute;
+  top: 69.86%;
+  width: 38.89%;
+}
+.teacher-home-desktop .vector-d76RFT {
+  background-color: transparent;
+  height: 80.95%;
+  left: -4.55%;
+  position: absolute;
+  top: -4.76%;
+  width: 109.09%;
+}
+.teacher-home-desktop .vector-i4OzBG {
+  background-color: transparent;
+  height: 41.67%;
+  left: 29.17%;
+  position: absolute;
+  top: 8.33%;
+  width: 41.67%;
+}
+.teacher-home-desktop .vector-tfbOtx {
+  background-color: transparent;
+  height: 19.05%;
+  left: 27.27%;
+  position: absolute;
+  top: 85.71%;
+  width: 18.18%;
+}
+.teacher-home-desktop .what-do-you-wan-to-learn-today-KOSCQa {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 34px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 240px;
+}
+.teacher-home-desktop .what-do-you-wan-to-learn-today-KOSCQa::placeholder {
+  color: #a3a3a399;
+}
+.teacher-home-desktop .youtubevideohero-nfp9la {
+  background-color: transparent;
+  height: 662px;
+  left: calc(50.00% - 588px);
+  overflow: hidden;
+  position: absolute;
+  top: calc(50.00% - 280px);
+  width: 1176px;
+}
+
+/* FIXME: TEACHERS HOME DESKTOP */
+
+
+
+
+
+
+/* TODO: LOGIN */
+
+.login {
+  background-color: var(--white);
+  height: 100vh;
+  margin: 0px;
+  min-height: 587px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.login .background-b8DrbD {
+  background-color: transparent;
+  height: 632px;
+  left: -122px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 62px;
+  width: 528px;
+}
+.login .botao-google-0YPIcY {
+  background-color: var(--white);
+  border-radius: 8px;
+  height: 48px;
+  left: 301px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 326px;
+  width: 123px;
+}
+.login .card-login-b8DrbD {
+  background-color: transparent;
+  height: 460px;
+  left: calc(50.00% - 228px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 228px);
+  width: 456px;
+}
+.login .ellipse-20-CkCW5s {
+  background-color: transparent;
+  height: 666px;
+  left: -14px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 90px;
+  width: 666px;
+}
+.login .ellipse-21-CkCW5s {
+  background-color: transparent;
+  height: 577px;
+  left: -124px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: -124px;
+  width: 577px;
+}
+.login .email-FxbqKy {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 17px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: 360px;
+}
+.login .email-FxbqKy::placeholder {
+  color: #0000005c;
+}
+.login .email-form-YMxu3V {
+  background-color: transparent;
+  height: 49px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 394px;
+}
+.login .facebook-HiuuBP {
+  background-color: transparent;
+  height: auto;
+  left: 46px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.login .facebook-agwQ5d {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.login .facebook-button-0YPIcY {
+  background-color: var(--white);
+  border-radius: 8px;
+  height: 48px;
+  left: 166px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 326px;
+  width: 123px;
+}
+.login .facebook-frame-HiuuBP {
+  background-color: transparent;
+  height: 24px;
+  left: 12px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 12px;
+  width: 24px;
+}
+.login .form-sign-up-0YPIcY {
+  background-color: transparent;
+  height: 187px;
+  left: calc(50.00% - 196px);
+  position: absolute;
+  top: calc(50.00% - 141px);
+  width: 392px;
+}
+.login .frame-20-YMxu3V {
+  background-color: var(--persian-green);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 48px;
+  left: calc(50.00% - 196px);
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% + 46px);
+  transition: all 0.2s ease;
+  width: 392px;
+}
+.login .frame-20-YMxu3V:hover {
+
+transform: scale(1.1);
+}
+.login .gmail-frame-yxnOyI {
+  background-color: transparent;
+  height: 23px;
+  left: 21px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 12px;
+  width: 23px;
+}
+.login .google-yxnOyI {
+  background-color: transparent;
+  color: var(--shark);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.login .group-515-LAxZJL {
+  background-color: transparent;
+  height: 24px;
+  left: 19px;
+  position: absolute;
+  top: 12px;
+  width: 71px;
+}
+.login .i-dont-have-an-acount-0YPIcY {
+  background-color: transparent;
+  height: auto;
+  left: 247px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-decoration: underline;
+  top: 37px;
+  white-space: nowrap;
+  width: 179px;
+}
+.login .ic-remove-red-eye-24px-prLceG {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.login .icons24px-eye-LAxZJL {
+  background-color: transparent;
+  height: 11px;
+  left: 357px;
+  position: absolute;
+  top: 19px;
+  width: 16px;
+}
+.login .login-0YPIcY {
+  background-color: transparent;
+  height: auto;
+  left: 31px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 28px;
+  width: 57px;
+}
+.login .login-DdEuiy {
+  background-color: transparent;
+  height: auto;
+  left: 174px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.login .or-login-with-0YPIcY {
+  background-color: transparent;
+  color: #0f0f0f99;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 172px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 289px;
+  white-space: nowrap;
+  width: 115px;
+}
+.login .password-25tDWe {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 360px;
+}
+.login .password-25tDWe::placeholder {
+  color: #0000005c;
+}
+.login .password-form-YMxu3V {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 48px;
+  left: 1px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 57px;
+  width: 392px;
+}
+.login .rectangle-108-0YPIcY {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px #00000040;
+  height: 460px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 456px;
+}
+.login .rectangle-109-FxbqKy {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 49px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 392px;
+}
+.login .shape-ihZdyl {
+  background-color: transparent;
+  height: 100.83%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: -0.42%;
+  width: 100%;
+}
+.login .this-site-is-pr-f-service-apply-0YPIcY {
+  background-color: transparent;
+  height: auto;
+  left: 30px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 399px;
+  width: 399px;
+}
+.login .twitter-CMJpyi {
+  background-color: transparent;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.login .twitter-WAyRiT {
+  background-color: transparent;
+  height: 79.17%;
+  left: 2.25%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 10.32%;
+  width: 97.92%;
+}
+.login .twitter-button-0YPIcY {
+  background-color: var(--white);
+  border-radius: 8px;
+  height: 48px;
+  left: 32px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 326px;
+  width: 122px;
+}
+.login .twitter-frame-CMJpyi {
+  background-color: transparent;
+  height: 24px;
+  left: 20px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  width: 24px;
+}
+.login .vector-3e7aqN {
+  background-color: transparent;
+  height: 41.30%;
+  left: 4.29%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 59.42%;
+  width: 80.43%;
+}
+.login .vector-Jm6BG6 {
+  background-color: transparent;
+  height: 50.00%;
+  left: 50.00%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 38.53%;
+  width: 50.00%;
+}
+.login .vector-aY91Jh {
+  background-color: transparent;
+  height: 39.13%;
+  left: 4.69%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 80.43%;
+}
+.login .vector-lfC0li {
+  background-color: transparent;
+  height: 100.00%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 100.00%;
+}
+
+/* FIXME: LOGIN */
+
+
+
+
+
+/* TODO: SIGNUP TEACHER */
+
+.signup-teacher {
+  background-color: var(--white);
+  height: 100vh;
+  margin: 0px;
+  min-height: 976px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.signup-teacher .add-class-nSNz8R {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.signup-teacher .add-class-nSNz8R:hover {
+
+transform: scale(1.1);
+}
+.signup-teacher .agree-and-sign-up-R9FbMy {
+  background-color: transparent;
+  height: auto;
+  left: 127px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.signup-teacher .background-blur-eV73GM {
+  background-color: transparent;
+  height: 689px;
+  left: -140px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 171px;
+  width: 576px;
+}
+.signup-teacher .button-add-32E33S {
+  background-color: transparent;
+  height: 48px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 48px;
+}
+.signup-teacher .by-signing-up-y-privacy-notice-96e7p7 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 42px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 667px;
+  width: 364px;
+}
+.signup-teacher .cards-completo-eV73GM {
+  background-color: transparent;
+  height: 842px;
+  left: calc(50.00% - 228px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 423px);
+  width: 456px;
+}
+.signup-teacher .components-checkbox-active-qrNsKX {
+  background-color: transparent;
+  height: 16px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2px;
+  width: 16px;
+}
+.signup-teacher .components-checkbox-inactive-96e7p7 {
+  background-color: transparent;
+  height: 3.14%;
+  left: 6.99%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 74.33%;
+  width: 5.24%;
+}
+.signup-teacher .description-form-64AJhh {
+  background-color: transparent;
+  height: 208px;
+  left: 31px;
+  position: absolute;
+  top: 391px;
+  width: 395px;
+}
+.signup-teacher .description-tLde4O {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 18px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 13px;
+  white-space: nowrap;
+  width: 87px;
+}
+.signup-teacher .description-tLde4O::placeholder {
+  color: #0000005c;
+}
+.signup-teacher .dropshadow-3-Foq04G {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.signup-teacher .ellipse-20-uOxfNB {
+  background-color: transparent;
+  height: 704px;
+  left: -4px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 109px;
+  width: 704px;
+}
+.signup-teacher .ellipse-21-uOxfNB {
+  background-color: transparent;
+  height: 607px;
+  left: -124px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: -124px;
+  width: 607px;
+}
+.signup-teacher .email-YJeNI0 {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 17px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: 44px;
+}
+.signup-teacher .email-YJeNI0::placeholder {
+  color: #0000005c;
+}
+.signup-teacher .email-form-64AJhh {
+  background-color: transparent;
+  height: 49px;
+  left: 32px;
+  position: absolute;
+  top: 89px;
+  width: 394px;
+}
+.signup-teacher .frame-20-96e7p7 {
+  background-color: var(--persian-green);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 48px;
+  left: calc(50.00% - 196px);
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% + 294px);
+  transition: all 0.2s ease;
+  width: 392px;
+}
+.signup-teacher .frame-20-96e7p7:hover {
+
+transform: scale(1.1);
+}
+.signup-teacher .group-515-nscbkX {
+  background-color: transparent;
+  height: 24px;
+  left: 19px;
+  position: absolute;
+  top: 12px;
+  width: 71px;
+}
+.signup-teacher .group-517-96e7p7 {
+  background-color: transparent;
+  height: 36px;
+  left: 32px;
+  position: absolute;
+  top: 621px;
+  width: 390px;
+}
+.signup-teacher .i-have-an-acount-64AJhh {
+  background-color: transparent;
+  height: auto;
+  left: 299px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-decoration: underline;
+  top: 37px;
+  white-space: nowrap;
+  width: 127px;
+}
+.signup-teacher .ic-remove-red-eye-24px-Y7iUqJ {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.signup-teacher .icons16px-check-Foq04G {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 8px);
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.signup-teacher .icons24px-eye-nscbkX {
+  background-color: transparent;
+  height: 11px;
+  left: 357px;
+  position: absolute;
+  top: 19px;
+  width: 16px;
+}
+.signup-teacher .name-2QQIqG {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 17px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: 44px;
+}
+.signup-teacher .name-2QQIqG::placeholder {
+  color: #0000005c;
+}
+.signup-teacher .name-form-64AJhh {
+  background-color: transparent;
+  height: 49px;
+  left: 31px;
+  position: absolute;
+  top: 233px;
+  width: 395px;
+}
+.signup-teacher .password-form-64AJhh {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 48px;
+  left: 32px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 146px;
+  width: 392px;
+}
+.signup-teacher .password-nxV3zw {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 71px;
+}
+.signup-teacher .password-nxV3zw::placeholder {
+  color: #0000005c;
+}
+.signup-teacher .rectangle-108-64AJhh {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px #00000040;
+  height: 842px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 456px;
+}
+.signup-teacher .rectangle-109-YJeNI0 {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 49px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 392px;
+}
+.signup-teacher .rectangle-111-2QQIqG {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 49px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 393px;
+}
+.signup-teacher .rectangle-112-tLde4O {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 208px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 393px;
+}
+.signup-teacher .send-me-product-rogress-reports-qrNsKX {
+  background-color: transparent;
+  height: auto;
+  left: 26px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 364px;
+}
+.signup-teacher .shadow-2-exxh1t {
+  background-color: var(--white);
+  border: 0.3px solid var(--black);
+  border-radius: 6px;
+  box-shadow: 0px 7px 20px #00000012;
+  height: 112.50%;
+  left: -6.28%;
+  mix-blend-mode: normal;
+  position: relative;
+  top: -6.25%;
+  width: 112.55%;
+}
+.signup-teacher .shape-gSqkx5 {
+  background-color: transparent;
+  height: 100.83%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: -0.42%;
+  width: 100%;
+}
+.signup-teacher .sign-up-64AJhh {
+  background-color: transparent;
+  height: auto;
+  left: 31px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 28px;
+  width: 73px;
+}
+.signup-teacher .this-site-is-pr-f-service-apply-96e7p7 {
+  background-color: transparent;
+  height: auto;
+  left: 30px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 782px;
+  width: 399px;
+}
+.signup-teacher .upload-form-button-96e7p7 {
+  background-color: transparent;
+  height: 842px;
+  left: calc(50.00% - 228px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 421px);
+  width: 456px;
+}
+.signup-teacher .upload-image-button-96e7p7 {
+  background-color: transparent;
+  height: 48px;
+  left: 31px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 316px;
+  width: 48px;
+}
+.signup-teacher .upload-photo-64AJhh {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 90px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 328px;
+  white-space: nowrap;
+  width: 99px;
+}
+.signup-teacher .upload-photo-64AJhh::placeholder {
+  color: #0000005c;
+}
+.signup-teacher .use-at-least-on-and-one-symbol-64AJhh {
+  background-color: transparent;
+  height: auto;
+  left: 32px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 194px;
+  white-space: nowrap;
+  width: auto;
+}
+
+/* FIXME: SIGNUP TEACHER */
+
+
+
+
+
+
+/* TODO: STUDENT SIGNUP */
+
+.signup-student {
+  background-color: var(--white);
+  height: 100vh;
+  margin: 0px;
+  min-height: 836px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.signup-student .add-class-fk0HZ8 {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.signup-student .add-class-fk0HZ8:hover {
+
+transform: scale(1.1);
+}
+.signup-student .agree-and-sign-up-RGbFQd {
+  background-color: transparent;
+  height: auto;
+  left: 127px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.signup-student .botao-google-ZAqdUl {
+  background-color: var(--white);
+  border-radius: 8px;
+  height: 48px;
+  left: calc(50.00% + 68px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 218px);
+  width: 123px;
+}
+.signup-student .button-add-nrQtuT {
+  background-color: transparent;
+  height: 48px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 48px;
+}
+.signup-student .by-signing-up-y-privacy-notice-ZAqdUl {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 191px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% + 72px);
+  width: 364px;
+}
+.signup-student .complete-signup-student-WcrAH8 {
+  background-color: transparent;
+  height: 704px;
+  left: calc(50.00% - 228px);
+  position: absolute;
+  top: calc(50.00% - 353px);
+  width: 470px;
+}
+.signup-student .components-checkbox-active-Pvi6as {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 195px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 16px;
+}
+.signup-student .components-checkbox-inactive-ZAqdUl {
+  background-color: transparent;
+  height: 27px;
+  left: calc(50.00% - 201px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 38px);
+  width: 24px;
+}
+.signup-student .dropshadow-3-SOsexD {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.signup-student .ellipse-20-Nx3N5U {
+  background-color: transparent;
+  height: 666px;
+  left: -14px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 90px;
+  width: 666px;
+}
+.signup-student .ellipse-21-Nx3N5U {
+  background-color: transparent;
+  height: 577px;
+  left: -124px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: -124px;
+  width: 577px;
+}
+.signup-student .email-form-kgoDgP {
+  background-color: transparent;
+  height: 49px;
+  left: calc(50.00% - 197px);
+  position: absolute;
+  top: calc(50.00% - 218px);
+  width: 394px;
+}
+.signup-student .email-xcQbdw {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: calc(50.00% - 180px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: 360px;
+}
+.signup-student .email-xcQbdw::placeholder {
+  color: #0000005c;
+}
+.signup-student .facebook-5n4GNy {
+  background-color: transparent;
+  height: 100%;
+  left: -1.04%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 102.08%;
+}
+.signup-student .facebook-button-ZAqdUl {
+  background-color: var(--white);
+  border-radius: 8px;
+  height: 48px;
+  left: calc(50.00% - 67px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 218px);
+  width: 123px;
+}
+.signup-student .facebook-frame-txXSoV {
+  background-color: transparent;
+  height: 24px;
+  left: 12px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 12px;
+  width: 24px;
+}
+.signup-student .facebook-txXSoV {
+  background-color: transparent;
+  height: auto;
+  left: 46px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.signup-student .frame-20-kgoDgP {
+  background-color: var(--persian-green);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 48px;
+  left: calc(50.00% - 194px);
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% + 170px);
+  transition: all 0.2s ease;
+  width: 392px;
+}
+.signup-student .frame-20-kgoDgP:hover {
+
+transform: scale(1.1);
+}
+.signup-student .frame-356-WcrAH8 {
+  background-color: transparent;
+  height: 632px;
+  left: -183px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 102px;
+  width: 528px;
+}
+.signup-student .from-group-ZAqdUl {
+  background-color: transparent;
+  height: 437px;
+  left: calc(50.00% - 204px);
+  position: absolute;
+  top: calc(50.00% - 263px);
+  width: 395px;
+}
+.signup-student .gmail-frame-fVbQAt {
+  background-color: transparent;
+  height: 23px;
+  left: 21px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 12px;
+  width: 23px;
+}
+.signup-student .google-fVbQAt {
+  background-color: transparent;
+  color: var(--shark);
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.signup-student .group-515-ZNR20H {
+  background-color: transparent;
+  height: 24px;
+  left: 19px;
+  position: absolute;
+  top: 12px;
+  width: 71px;
+}
+.signup-student .group-517-ZAqdUl {
+  background-color: transparent;
+  height: 36px;
+  left: calc(50.00% - 201px);
+  position: absolute;
+  top: calc(50.00% + 26px);
+  width: 390px;
+}
+.signup-student .i-have-an-acount-ZAqdUl {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 64px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-decoration: underline;
+  top: calc(50.00% - 315px);
+  white-space: nowrap;
+  width: 127px;
+}
+.signup-student .ic-remove-red-eye-24px-nxWBsR {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.signup-student .icons16px-check-SOsexD {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 8px);
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.signup-student .icons24px-eye-ZNR20H {
+  background-color: transparent;
+  height: 11px;
+  left: 357px;
+  position: absolute;
+  top: 19px;
+  width: 16px;
+}
+.signup-student .name-IdktWz {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: calc(50.00% - 180px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: 360px;
+}
+.signup-student .name-IdktWz::placeholder {
+  color: #0000005c;
+}
+.signup-student .name-form-kgoDgP {
+  background-color: transparent;
+  height: 49px;
+  left: calc(50.00% - 198px);
+  position: absolute;
+  top: calc(50.00% - 74px);
+  width: 395px;
+}
+.signup-student .or-sign-up-with-ZAqdUl {
+  background-color: transparent;
+  color: #0f0f0f99;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 57px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 181px);
+  white-space: nowrap;
+  width: 115px;
+}
+.signup-student .password-form-kgoDgP {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 48px;
+  left: calc(50.00% - 197px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 162px);
+  width: 392px;
+}
+.signup-student .password-yPiISK {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 360px;
+}
+.signup-student .password-yPiISK::placeholder {
+  color: #0000005c;
+}
+.signup-student .rectangle-108-ZAqdUl {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px #00000040;
+  height: 704px;
+  left: calc(50.00% - 235px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 352px);
+  width: 456px;
+}
+.signup-student .rectangle-109-xcQbdw {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 49px;
+  left: calc(50.00% - 197px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 24px);
+  width: 392px;
+}
+.signup-student .rectangle-111-IdktWz {
+  background-color: transparent;
+  border-radius: 8px;
+  height: 49px;
+  left: calc(50.00% - 198px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 24px);
+  width: 393px;
+}
+.signup-student .send-me-product-rogress-reports-Pvi6as {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 169px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 18px);
+  width: 364px;
+}
+.signup-student .shadow-2-gBI565 {
+  background-color: var(--white);
+  border: 0.3px solid var(--black);
+  border-radius: 6px;
+  box-shadow: 0px 7px 20px #00000012;
+  height: 112.50%;
+  left: -6.28%;
+  mix-blend-mode: normal;
+  position: relative;
+  top: -6.25%;
+  width: 112.55%;
+}
+.signup-student .shape-Huexxf {
+  background-color: transparent;
+  height: 100.83%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: -0.42%;
+  width: 100%;
+}
+.signup-student .sign-up-ZAqdUl {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 204px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 324px);
+  width: 73px;
+}
+.signup-student .this-site-is-pr-f-service-apply-ZAqdUl {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 203px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 291px);
+  width: 399px;
+}
+.signup-student .twitter-button-ZAqdUl {
+  background-color: var(--white);
+  border-radius: 8px;
+  height: 48px;
+  left: calc(50.00% - 201px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 218px);
+  width: 122px;
+}
+.signup-student .twitter-frame-zS1nbs {
+  background-color: transparent;
+  height: 24px;
+  left: 20px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  width: 24px;
+}
+.signup-student .twitter-xImxwx {
+  background-color: transparent;
+  height: 79.17%;
+  left: 3.29%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 10.32%;
+  width: 95.83%;
+}
+.signup-student .twitter-zS1nbs {
+  background-color: transparent;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  white-space: nowrap;
+  width: auto;
+}
+.signup-student .upload-image-button-kgoDgP {
+  background-color: transparent;
+  height: 48px;
+  left: calc(50.00% - 197px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 2px);
+  width: 48px;
+}
+.signup-student .upload-photo-ZAqdUl {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: calc(50.00% - 144px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: calc(50.00% - 34px);
+  white-space: nowrap;
+  width: 99px;
+}
+.signup-student .upload-photo-ZAqdUl::placeholder {
+  color: #0000005c;
+}
+.signup-student .use-at-least-on-and-one-symbol-ZAqdUl {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 203px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 158px);
+  white-space: nowrap;
+  width: auto;
+}
+.signup-student .vector-6WCsGx {
+  background-color: transparent;
+  height: 100.00%;
+  left: -1.09%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 102.17%;
+}
+.signup-student .vector-QHnfB7 {
+  background-color: transparent;
+  height: 50.00%;
+  left: 48.91%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 38.53%;
+  width: 52.17%;
+}
+.signup-student .vector-i3pDvW {
+  background-color: transparent;
+  height: 39.13%;
+  left: 4.69%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 80.43%;
+}
+.signup-student .vector-xiMS09 {
+  background-color: transparent;
+  height: 41.30%;
+  left: 4.29%;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 59.42%;
+  width: 80.43%;
+}
+
+/* FIXME: STUDENT SIGNUP */
+
+
+
+
+
+
+/* TODO: LESSON FILTERS */
+
+.lessons-filter {
+  background-color: var(--white);
+  height: 100vh;
+  margin: 0px;
+  min-height: 900px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.lessons-filter .advanced-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 223px;
+  width: auto;
+}
+.lessons-filter .all-MYxMb0, .all-MYxMb0 a{
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 900;
+  height: auto;
+  left: 37px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 9px;
+  width: auto;
+}
+
+.all-MYxMb0 a:hover{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.lessons-filter .beginner-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 151px;
+  width: auto;
+}
+.lessons-filter .butoes-class-type-3E75Wu {
+  background-color: transparent;
+  height: 39px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 34px;
+  width: 288px;
+}
+
+.classes-list {
+  background-color: transparent;
+  height: 334px;
+  margin-left: 28%;
+  margin-right: auto;
+  margin-top: 150px;
+  width: 294px;
+  padding: 10px;
+}
+
+.card{
+  padding: 10px;
+}
+
+.class-user{
+  border-radius: 50% !important;
+  float:right;
+  background-color: transparent;
+  max-height: 24px;
+  left: 587px;
+  mix-blend-mode: normal;
+  top: 9px;
+  max-width: 24px;
+}
+
+.class-user img{
+  float:right;
+  height: 24px;
+  width: 24px;
+}
+
+.dropdown-menu{
+  background-color: transparent !important;
+  margin-top: 20px;
+}
+
+.dropdown-item{
+  color: white;
+  font-size: 20px;
+}
+
+.dropdown-item:hover{
+  color: white;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+
+/* .lessons-filter .card-aula-2-6t54R0 {
+  background-color: transparent;
+  height: 334px;
+  left: calc(50.00% + 12px);
+  position: absolute;
+  top: calc(50.00% - 290px);
+  width: 294px;
+}
+.lessons-filter .card-aula-3-6t54R0 {
+  background-color: transparent;
+  height: 334px;
+  left: calc(50.00% + 324px);
+  position: absolute;
+  top: calc(50.00% - 290px);
+  width: 294px;
+}
+.lessons-filter .card-aula-4-6t54R0 {
+  background-color: transparent;
+  height: 334px;
+  left: calc(50.00% - 300px);
+  position: absolute;
+  top: calc(50.00% + 68px);
+  width: 294px;
+}
+.lessons-filter .card-aula-5-6t54R0 {
+  background-color: transparent;
+  height: 334px;
+  left: calc(50.00% + 12px);
+  position: absolute;
+  top: calc(50.00% + 68px);
+  width: 294px;
+}
+.lessons-filter .card-aula-6-6t54R0 {
+  background-color: transparent;
+  height: 334px;
+  left: calc(50.00% + 324px);
+  position: absolute;
+  top: calc(50.00% + 68px);
+  width: 294px;
+}
+.lessons-filter .card-aula-6t54R0 {
+  background-color: transparent;
+  height: 334px;
+  left: calc(50.00% - 300px);
+  position: absolute;
+  top: calc(50.00% - 290px);
+  width: 294px;
+}*/
+
+.lessons-filter .class-length-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 287px;
+  width: auto;
+}
+.lessons-filter .class-level-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 113px;
+  width: auto;
+}
+.lessons-filter .class-type-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+.lessons-filter .components-checkbox-inactive-29SN4L {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 223px;
+  width: 24px;
+}
+.lessons-filter .components-checkbox-inactive-3E75Wu {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 151px;
+  width: 24px;
+}
+.lessons-filter .components-checkbox-inactive-TzT028 {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 187px;
+  width: 24px;
+}
+.lessons-filter .components-checkbox-inactive-b1kO45 {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 361px;
+  width: 24px;
+}
+.lessons-filter .components-checkbox-inactive-qB9Rc1 {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 397px;
+  width: 24px;
+}
+.lessons-filter .components-checkbox-inactive-r3iMo8 {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 433px;
+  width: 24px;
+}
+.lessons-filter .components-checkbox-inactive-xP3p0u {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 325px;
+  width: 24px;
+}
+.lessons-filter .ellipse-45-0IDIfR {
+  background-color: var(--white-2);
+  border-radius: 15.999887466430664px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-45-GVvsY6 {
+  background-color: var(--white-2);
+  border-radius: 15.999887466430664px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-45-OOA1rL {
+  background-color: var(--white-2);
+  border-radius: 15.999887466430664px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-45-Oz08UC {
+  background-color: var(--white-2);
+  border-radius: 15.999887466430664px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-45-RPxAkF {
+  background-color: var(--white-2);
+  border-radius: 15.999887466430664px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-45-XxIOyX {
+  background-color: var(--white-2);
+  border-radius: 15.999887466430664px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-46-IM0CzT {
+  background-color: var(--white-2);
+  border-radius: 16px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-46-OMS0YR {
+  background-color: var(--white-2);
+  border-radius: 16px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-46-PnzeKz {
+  background-color: var(--white-2);
+  border-radius: 16px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-46-YTjWQm {
+  background-color: var(--white-2);
+  border-radius: 16px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-46-cjCxEI {
+  background-color: var(--white-2);
+  border-radius: 16px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .ellipse-46-lsqNi8 {
+  background-color: var(--white-2);
+  border-radius: 16px;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .frame-357-Nvt9f6 {
+  background-color: transparent;
+  height: 39px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.lessons-filter .frame-358-Nvt9f6 {
+  background-color: transparent;
+  height: 39px;
+  left: 96px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.lessons-filter .frame-359-Nvt9f6 {
+  background-color: transparent;
+  height: 39px;
+  left: 192px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.lessons-filter .frame-43-5fRA8d {
+  background-color: transparent;
+  height: 68px;
+  left: calc(50.00% - 145px);
+  position: absolute;
+  top: calc(50.00% + 35px);
+  width: 284px;
+}
+.lessons-filter .frame-43-Ds9J6s {
+  background-color: transparent;
+  height: 68px;
+  left: calc(50.00% - 145px);
+  position: absolute;
+  top: calc(50.00% + 35px);
+  width: 284px;
+}
+.lessons-filter .frame-43-H55kkQ {
+  background-color: transparent;
+  height: 68px;
+  left: calc(50.00% - 145px);
+  position: absolute;
+  top: calc(50.00% + 35px);
+  width: 284px;
+}
+.lessons-filter .frame-43-jTIUbh {
+  background-color: transparent;
+  height: 68px;
+  left: calc(50.00% - 145px);
+  position: absolute;
+  top: calc(50.00% + 35px);
+  width: 284px;
+}
+.lessons-filter .frame-43-puCt1x {
+  background-color: transparent;
+  height: 68px;
+  left: calc(50.00% - 145px);
+  position: absolute;
+  top: calc(50.00% + 35px);
+  width: 284px;
+}
+.lessons-filter .frame-43-zKB7O9 {
+  background-color: transparent;
+  height: 68px;
+  left: calc(50.00% - 145px);
+  position: absolute;
+  top: calc(50.00% + 35px);
+  width: 284px;
+}
+.lessons-filter .free-ltlgkq {
+  background-color: transparent;
+  height: auto;
+  left: 31px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 9px;
+  width: auto;
+}
+.lessons-filter .gabriel-silva-5fRA8d {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 126px);
+  width: auto;
+}
+.lessons-filter .gabriel-silva-Ds9J6s {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 126px);
+  width: auto;
+}
+.lessons-filter .gabriel-silva-H55kkQ {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 126px);
+  width: auto;
+}
+.lessons-filter .gabriel-silva-jTIUbh {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 126px);
+  width: auto;
+}
+.lessons-filter .gabriel-silva-puCt1x {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 126px);
+  width: auto;
+}
+.lessons-filter .gabriel-silva-zKB7O9 {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 126px);
+  width: auto;
+}
+.lessons-filter .group-115-0IDIfR {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.lessons-filter .group-115-GVvsY6 {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.lessons-filter .group-115-OOA1rL {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.lessons-filter .group-115-Oz08UC {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.lessons-filter .group-115-RPxAkF {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.lessons-filter .group-115-XxIOyX {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.lessons-filter .group-482-5yJ9xy {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  position: relative;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .group-482-Mw8uXD {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  position: relative;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .group-482-OebncF {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  position: relative;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .group-482-PAobhv {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  position: relative;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .group-482-mhB1Gd {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  position: relative;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .group-482-ohk97n {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  position: relative;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+.lessons-filter .group-488-5fRA8d {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% + 97px);
+  position: absolute;
+  top: calc(50.00% + 120px);
+  width: 32px;
+}
+.lessons-filter .group-488-Ds9J6s {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% + 97px);
+  position: absolute;
+  top: calc(50.00% + 120px);
+  width: 32px;
+}
+.lessons-filter .group-488-H55kkQ {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% + 97px);
+  position: absolute;
+  top: calc(50.00% + 120px);
+  width: 32px;
+}
+.lessons-filter .group-488-jTIUbh {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% + 97px);
+  position: absolute;
+  top: calc(50.00% + 120px);
+  width: 32px;
+}
+.lessons-filter .group-488-puCt1x {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% + 97px);
+  position: absolute;
+  top: calc(50.00% + 120px);
+  width: 32px;
+}
+.lessons-filter .group-488-zKB7O9 {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% + 97px);
+  position: absolute;
+  top: calc(50.00% + 120px);
+  width: 32px;
+}
+.lessons-filter .group-489-5fRA8d {
+  background-color: transparent;
+  height: 32px;
+  left: 200px;
+  position: absolute;
+  top: 287px;
+  width: 32px;
+}
+.lessons-filter .group-489-Ds9J6s {
+  background-color: transparent;
+  height: 32px;
+  left: 200px;
+  position: absolute;
+  top: 287px;
+  width: 32px;
+}
+.lessons-filter .group-489-H55kkQ {
+  background-color: transparent;
+  height: 32px;
+  left: 200px;
+  position: absolute;
+  top: 287px;
+  width: 32px;
+}
+.lessons-filter .group-489-jTIUbh {
+  background-color: transparent;
+  height: 32px;
+  left: 200px;
+  position: absolute;
+  top: 287px;
+  width: 32px;
+}
+.lessons-filter .group-489-puCt1x {
+  background-color: transparent;
+  height: 32px;
+  left: 200px;
+  position: absolute;
+  top: 287px;
+  width: 32px;
+}
+.lessons-filter .group-489-zKB7O9 {
+  background-color: transparent;
+  height: 32px;
+  left: 200px;
+  position: absolute;
+  top: 287px;
+  width: 32px;
+}
+.lessons-filter .guitar-lesson-6t54R0 {
+  background-color: transparent;
+  height: 66px;
+  left: calc(50.00% - 612px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 402px);
+  width: 197px;
+}
+.lessons-filter .guitar-lessons-89XVyM {
+  background-color: transparent;
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 900;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+.lessons-filter .intermediate-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 187px;
+  width: auto;
+}
+.lessons-filter .learn-how-to-pl-e-in-every-tons-3bSqZD {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  width: 266px;
+}
+.lessons-filter .learn-how-to-pl-e-in-every-tons-8FNx7f {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  width: 266px;
+}
+.lessons-filter .learn-how-to-pl-e-in-every-tons-LOrPHR {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  width: 266px;
+}
+.lessons-filter .learn-how-to-pl-e-in-every-tons-NfChcN {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  width: 266px;
+}
+.lessons-filter .learn-how-to-pl-e-in-every-tons-baCI4y {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  width: 266px;
+}
+.lessons-filter .learn-how-to-pl-e-in-every-tons-myDxvF {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  width: 266px;
+}
+.lessons-filter .line-4-6t54R0 {
+  background-color: transparent;
+  height: 2px;
+  left: calc(50.00% - 614px);
+  position: absolute;
+  top: calc(50.00% - 329px);
+  width: 1226px;
+}
+.lessons-filter .menu-lateral-filtro-6t54R0 {
+  background-color: transparent;
+  height: 457px;
+  left: calc(50.00% - 612px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 284px);
+  width: 288px;
+}
+.lessons-filter .payed-8Yoxrq {
+  background-color: transparent;
+  height: auto;
+  left: 25px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 9px;
+  width: auto;
+}
+.lessons-filter .rectangle-118-MYxMb0 {
+  background-color: transparent;
+  height: 39px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.lessons-filter .rectangle-119-8Yoxrq {
+  background-color: var(--white);
+  height: 39px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.lessons-filter .rectangle-120-ltlgkq {
+  background-color: transparent;
+  height: 39px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.lessons-filter .rectangle-121-5fRA8d {
+  background-color: transparent;
+  height: 183px;
+  /* left: calc(50.00% - 155px); */
+  mix-blend-mode: normal;
+  /* position: absolute; */
+  /* top: calc(50.00% - 175px); */
+  width: 304px;
+}
+.lessons-filter .rectangle-121-Ds9J6s {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 175px);
+  width: 304px;
+}
+.lessons-filter .rectangle-121-H55kkQ {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 175px);
+  width: 304px;
+}
+.lessons-filter .rectangle-121-jTIUbh {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 175px);
+  width: 304px;
+}
+.lessons-filter .rectangle-121-puCt1x {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 175px);
+  width: 304px;
+}
+.lessons-filter .rectangle-121-zKB7O9 {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 175px);
+  width: 304px;
+}
+.lessons-filter .rectangle-122-5fRA8d {
+  background-color: transparent;
+  height: 183px;
+  mix-blend-mode: normal;
+  /* left: calc(50.00% - 155px);
+  position: absolute;
+  top: calc(50.00% - 8px); */
+  width: 304px;
+}
+.lessons-filter .rectangle-122-Ds9J6s {
+  background-color: transparent;
+  height: 183px;
+  mix-blend-mode: normal;
+  /* left: calc(50.00% - 155px);
+  position: absolute;
+  top: calc(50.00% - 8px); */
+  width: 304px;
+}
+.lessons-filter .rectangle-122-H55kkQ {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 304px;
+}
+.lessons-filter .rectangle-122-jTIUbh {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 304px;
+}
+.lessons-filter .rectangle-122-puCt1x {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 304px;
+}
+.lessons-filter .rectangle-122-zKB7O9 {
+  background-color: transparent;
+  height: 183px;
+  left: calc(50.00% - 155px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 304px;
+}
+.lessons-filter .shadow-2-0GGpwo {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px #00000012;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .shadow-2-6INjRS {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px #00000012;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .shadow-2-F7bawK {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px #00000012;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .shadow-2-TB3voy {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px #00000012;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .shadow-2-V0Ek69 {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px #00000012;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .shadow-2-bu05Cq {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px #00000012;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .shadow-2-xnfCOn {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px #00000012;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .stroke-dropshadow-3LIcwT {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .stroke-dropshadow-D12Rix {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .stroke-dropshadow-Ierx30 {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .stroke-dropshadow-aYoEn6 {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .stroke-dropshadow-bctL5Q {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .stroke-dropshadow-iTxidv {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .stroke-dropshadow-rTndjG {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.lessons-filter .vector-2CXgXA {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% + 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-2PLqgM {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% + 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-5SILtC {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% + 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-B9jzgI {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% - 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-GjcFoE {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 9px);
+  position: absolute;
+  top: calc(50.00% - 9px);
+  width: 18px;
+}
+.lessons-filter .vector-I928KN {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 9px);
+  position: absolute;
+  top: calc(50.00% - 9px);
+  width: 18px;
+}
+.lessons-filter .vector-IM0CzT {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 19px;
+}
+.lessons-filter .vector-OMS0YR {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 19px;
+}
+.lessons-filter .vector-PnzeKz {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 19px;
+}
+.lessons-filter .vector-PwMXCO {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% - 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-QbGAZu {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% + 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-VjcJyF {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 9px);
+  position: absolute;
+  top: calc(50.00% - 9px);
+  width: 18px;
+}
+.lessons-filter .vector-XGYeYt {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% - 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-YTjWQm {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 19px;
+}
+.lessons-filter .vector-cjCxEI {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 19px;
+}
+.lessons-filter .vector-dOmtcN {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 9px);
+  position: absolute;
+  top: calc(50.00% - 9px);
+  width: 18px;
+}
+.lessons-filter .vector-hQh7NJ {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% + 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-hqpu27 {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% + 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-lsqNi8 {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 10px);
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 19px;
+}
+.lessons-filter .vector-oMxPOW {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 9px);
+  position: absolute;
+  top: calc(50.00% - 9px);
+  width: 18px;
+}
+.lessons-filter .vector-rM2UtR {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 9px);
+  position: absolute;
+  top: calc(50.00% - 9px);
+  width: 18px;
+}
+.lessons-filter .vector-xgqn26 {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% - 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-xh0QTN {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% - 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .vector-xh33Nn {
+  background-color: transparent;
+  height: 4px;
+  left: calc(50.00% - 4px);
+  position: absolute;
+  top: calc(50.00% + 5px);
+  width: 4px;
+}
+.lessons-filter .x121-results-89XVyM {
+  background-color: transparent;
+  color: #555555;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 45px;
+  width: auto;
+}
+.lessons-filter .x15-30-min-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 361px;
+  width: auto;
+}
+.lessons-filter .x15-min-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 325px;
+  width: auto;
+}
+.lessons-filter .x15-students-5fRA8d {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x15-students-Ds9J6s {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x15-students-H55kkQ {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x15-students-jTIUbh {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x15-students-puCt1x {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x15-students-zKB7O9 {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 135px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x23m-5fRA8d {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 99px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x23m-Ds9J6s {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 99px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x23m-H55kkQ {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 99px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x23m-jTIUbh {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 99px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x23m-puCt1x {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 99px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x23m-zKB7O9 {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% + 99px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 12px);
+  width: auto;
+}
+.lessons-filter .x30-60-min-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 397px;
+  width: auto;
+}
+.lessons-filter .x60-min-3E75Wu {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 433px;
+  width: auto;
+}
+/* FIXME: LESSON FILTERS */
+
+
+
+
+
+
+/* TODO: VIDEO LESSON */
+
+.video-lesson {
+  background-color: var(--white);
+  height: 100vh;
+  margin: 0px;
+  min-height: 1197px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.video-lesson .about-class-781fxs {
+  background-color: transparent;
+  height: 67px;
+  left: calc(50.00% - 612px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 104px);
+  width: 704px;
+}
+.video-lesson .about-the-class-xaWGhO {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+.video-lesson .add-to-cart-nDrNHF {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 82px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  white-space: nowrap;
+  width: auto;
+}
+.video-lesson .add-to-favourites-HtYLpE {
+  background-color: transparent;
+  color: #000000cc;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: auto;
+}
+.video-lesson .audio-portuguese-OjMsWv {
+  background-color: transparent;
+  height: auto;
+  left: 22px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 117px;
+  width: auto;
+}
+.video-lesson .background-card-OjMsWv {
+  background-color: transparent;
+  height: 416px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 301px;
+}
+.video-lesson .button-add-card-OjMsWv {
+  background-color: var(--persian-green);
+  border-radius: 6px;
+  height: 40px;
+  left: 22px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 297px;
+  transition: all 0.2s ease;
+  width: 252px;
+}
+.video-lesson .button-add-card-OjMsWv:hover {
+
+transform: scale(1.1);
+}
+.video-lesson .button-add-favorites-OjMsWv {
+  background-color: transparent;
+  border: 1px solid #000000cc;
+  border-radius: 6px;
+  height: 40px;
+  left: 22px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 352px;
+  transition: all 0.2s ease;
+  width: 252px;
+}
+.video-lesson .button-add-favorites-OjMsWv:hover {
+
+transform: scale(1.1);
+}
+.video-lesson .by-gabriel-santos-zw9ccC {
+  background-color: transparent;
+  color: #555555;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 49px;
+  width: auto;
+}
+.video-lesson .card-about-teacher-781fxs {
+  background-color: transparent;
+  height: 286px;
+  left: calc(50.00% - 612px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 256px);
+  width: 704px;
+}
+.video-lesson .card-fix-position-781fxs {
+  background-color: transparent;
+  height: 416px;
+  left: calc(50.00% + 317px);
+  mix-blend-mode: normal;
+  position: fixed;
+  top: 165px;
+  width: 301px;
+}
+.video-lesson .ellipse-15-DxJeyI {
+  background-color: transparent;
+  height: 169px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 168px;
+}
+.video-lesson .group-321-mJvaxa {
+  background-color: transparent;
+  height: 24px;
+  left: 63px;
+  position: relative;
+  top: 7px;
+  width: 128px;
+}
+.video-lesson .i-studied-at-ca-lived-in-london-TRcrkb {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 208px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 101px;
+  width: 463px;
+}
+.video-lesson .imagem-professor-TRcrkb {
+  background-color: transparent;
+  height: 169px;
+  left: 16px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 16px;
+  width: 168px;
+}
+.video-lesson .learn-how-to-pl-e-in-every-tons-zw9ccC {
+  background-color: transparent;
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+.video-lesson .level-beginner-OjMsWv {
+  background-color: transparent;
+  height: auto;
+  left: 22px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 212px;
+  width: 247px;
+}
+.video-lesson .line-43-781fxs {
+  background-color: transparent;
+  height: 1px;
+  left: calc(50.00% - 612px);
+  position: absolute;
+  top: calc(50.00% + 239px);
+  width: 704px;
+}
+.video-lesson .line-52-781fxs {
+  background-color: transparent;
+  height: 1px;
+  left: calc(50.00% - 612px);
+  position: absolute;
+  top: calc(50.00% + 91px);
+  width: 704px;
+}
+.video-lesson .my-network-seri-a-multicoloured-xaWGhO {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 208px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 498px;
+}
+.video-lesson .portugal-TRcrkb {
+  background-color: transparent;
+  color: #000000e6;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 208px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 64px;
+  white-space: nowrap;
+  width: 78px;
+}
+.video-lesson .purchase-details-OjMsWv {
+  background-color: transparent;
+  color: #f56565;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 22px;
+  letter-spacing: 0.00px;
+  line-height: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  white-space: nowrap;
+  width: 261px;
+}
+.video-lesson .rating-48-stars-OjMsWv {
+  background-color: transparent;
+  height: auto;
+  left: 22px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 80px;
+  width: auto;
+}
+.video-lesson .rectangle-88-TRcrkb {
+  background-color: var(--white);
+  border-radius: 6px;
+  height: 286px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 704px;
+}
+.video-lesson .rectangle-95-YtObVd {
+  background-color: var(--white);
+  border-radius: 6px;
+  height: 416px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 301px;
+}
+
+.video-lesson .subtitles-spani-tuguese-english-OjMsWv {
+  background-color: transparent;
+  height: auto;
+  left: 22px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 154px;
+  width: 247px;
+}
+.video-lesson .title-TRcrkb {
+  background-color: transparent;
+  color: #f56565;
+  font-family: var(--font-family-playfair_display);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 208px;
+  letter-spacing: 0.00px;
+  line-height: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  white-space: nowrap;
+  width: 251px;
+}
+.video-lesson .titulo-781fxs {
+  background-color: transparent;
+  height: 70px;
+  left: calc(50.00% - 612px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 552px);
+  width: 627px;
+}
+.video-lesson .x128-OjMsWv {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-playfair_display);
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 22px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 257px;
+  white-space: nowrap;
+  width: 84px;
+}
+.video-lesson .youtubevideohero-781fxs {
+  background-color: transparent;
+  height: 505px;
+  left: calc(50.00% - 630px);
+  overflow: hidden;
+  position: absolute;
+  top: calc(50.00% - 452px);
+  width: 897px;
+}
+
+/* FIXME: VIDEO LESSON */
+
+
+
+
+
+
+
+/* TODO: FOOTER */
+
+
+/* screen - footer */
+
+.footer {
+  background-color: #262626;
+  height: 100vh;
+  margin: 0px;
+  min-height: 331px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.footer .about-us-QxQr1H {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: calc(100.00% - 6px);
+}
+.footer .about-us-xEDjf3 {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  white-space: nowrap;
+  width: calc(100.00% - 8px);
+}
+.footer .affiliates-QxQr1H {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 88px;
+  white-space: nowrap;
+  width: calc(100.00% - 9px);
+}
+.footer .categorias-footer-OpYFEQ {
+  background-color: transparent;
+  height: 112px;
+  left: calc(50.00% - 355px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 122px);
+  width: 709px;
+}
+.footer .drums-ucallr {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 64px;
+  white-space: nowrap;
+  width: calc(100.00% - 25px);
+}
+.footer .facebook-icon-dJH0wx {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% + 32px);
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.footer .facebook-icon-footer-OTbdFk {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 8px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.footer .footer-background-color-OpYFEQ {
+  background-color: #262626;
+  bottom: 0px;
+  height: 331px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  width: 100%;
+}
+.footer .footer-icons-group-GWI0ft {
+  background-color: transparent;
+  height: 16px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 96px;
+}
+.footer .for-students-SiBJct {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: calc(100.00% - 4px);
+}
+.footer .for-teachers-FhKgCF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: calc(100.00% - 15px);
+}
+.footer .frame-footer-icons-OpYFEQ {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 48px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 62px);
+  width: 96px;
+}
+.footer .gift-card-SiBJct {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 64px;
+  white-space: nowrap;
+  width: calc(100.00% - 13px);
+}
+.footer .group-204-D6atBk {
+  background-color: transparent;
+  height: 112px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% - 623px);
+}
+.footer .group-205-D6atBk {
+  background-color: transparent;
+  height: 112px;
+  left: 186px;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% - 557px);
+}
+.footer .group-206-D6atBk {
+  background-color: transparent;
+  height: 88px;
+  left: 407px;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% - 595px);
+}
+.footer .group-207-D6atBk {
+  background-color: transparent;
+  height: 112px;
+  left: 579px;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% - 571px);
+}
+.footer .guitar-ucallr {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  white-space: nowrap;
+  width: calc(100.00% - 25px);
+}
+.footer .how-to-sell-FhKgCF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 88px;
+  white-space: nowrap;
+  width: calc(100.00% - 23px);
+}
+.footer .instagram-icon-dJH0wx {
+  background-color: transparent;
+  height: 15px;
+  left: calc(50.00% - 7px);
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 15px;
+}
+.footer .instagram-icon-footer-S0S0jP {
+  background-color: transparent;
+  height: 15px;
+  left: calc(50.00% - 8px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 8px);
+  width: 16px;
+}
+.footer .musicorum-2021-VeQGn1 {
+  background-color: transparent;
+  color: #ffffffb2;
+  font-family: var(--font-family-manrope);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 51px);
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 8px);
+  white-space: nowrap;
+  width: auto;
+}
+.footer .piano-ucallr {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 88px;
+  white-space: nowrap;
+  width: calc(100.00% - 26px);
+}
+.footer .press-QxQr1H {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 64px;
+  white-space: nowrap;
+  width: calc(100.00% - 12px);
+}
+.footer .registo-marca-footer-OpYFEQ {
+  background-color: transparent;
+  height: 16px;
+  left: calc(50.00% - 51px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 108px);
+  width: 102px;
+}
+.footer .sellers-faq-FhKgCF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 64px;
+  white-space: nowrap;
+  width: calc(100.00% - 23px);
+}
+.footer .students-faq-SiBJct {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  white-space: nowrap;
+  width: calc(100.00% - 8px);
+}
+.footer .terms-and-conditions-FhKgCF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  white-space: nowrap;
+  width: calc(100.00% - 6px);
+}
+.footer .top-categories-ucallr {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: calc(100.00% - 6px);
+}
+.footer .twiiter-icon-dJH0wx {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 48px);
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 17px;
+}
+.footer .twitter-icon-footer-7qkrV0 {
+  background-color: transparent;
+  height: 14px;
+  left: calc(50.00% - 9px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 7px);
+  width: 18px;
+}
+
+
+
+/* FIXME: FOOTER */
+
+
+/* TODO:  UPDATE LESSONS */
+
+.upload-lesson {
+  background-color: #ffffff;
+  height: 100vh;
+  margin: 0px;
+  min-height: 1482px;
+  min-width: 1220px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.upload-lesson .title-FPckae {
+  background-color: transparent;
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% - 516px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 701px);
+  width: auto;
+}
+
+.upload-lesson .gabriel-santos-FPckae {
+  background-color: transparent;
+  color: #000000;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 475px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 642px);
+  white-space: nowrap;
+  width: auto;
+}
+
+.upload-lesson .edit-profile-FPckae {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 515px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 552px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.upload-lesson .edit-profile-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .upload-class-FPckae {
+  background-color: transparent;
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 900;
+  height: auto;
+  left: calc(50.00% - 515px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 335px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.upload-lesson .upload-class-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .edit-class-FPckae {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 516px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 298px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.upload-lesson .edit-class-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .account-settings-FPckae {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 515px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 515px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.upload-lesson .account-settings-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .password-FPckae {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 515px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 478px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.upload-lesson .password-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .social-profiles-FPckae {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 515px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 441px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.upload-lesson .social-profiles-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .email-notifications-FPckae {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 515px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 404px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.upload-lesson .email-notifications-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .foto-gabriel-grupo-FPckae {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% - 516px);
+  position: absolute;
+  top: calc(50.00% - 646px);
+  width: 32px;
+}
+
+.upload-lesson .foto-gabriel-profile-dZuBXd {
+  background-color: transparent;
+  height: 32px;
+  left: calc(50.00% - 16px);
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: calc(50.00% - 16px);
+  width: 32px;
+}
+
+.upload-lesson .line-61-FPckae {
+  background-color: transparent;
+  height: 1px;
+  left: calc(50.00% - 516px);
+  position: absolute;
+  top: calc(50.00% - 360px);
+  width: 184px;
+}
+
+.upload-lesson .line-4-FPckae {
+  background-color: transparent;
+  height: 2px;
+  left: calc(50.00% - 515px);
+  position: absolute;
+  top: calc(50.00% - 599px);
+  width: 1031px;
+}
+
+.upload-lesson .title-form-FPckae {
+  background-color: transparent;
+  height: 49px;
+  left: calc(50.00% - 252px);
+  position: absolute;
+  top: calc(50.00% - 552px);
+  width: 770px;
+}
+
+.upload-lesson .rectangle-title-wTwN8W {
+  background-color: var(--alabaster);
+  border-radius: 8px;
+  height: 49px;
+  left: calc(50.00% - 385px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 24px);
+  width: 768px;
+}
+
+.upload-lesson .title-wTwN8W {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: calc(50.00% - 368px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: 736px;
+}
+
+.upload-lesson .title-wTwN8W::placeholder {
+  color: #49494999;
+}
+
+.upload-lesson .email-form-FPckae {
+  background-color: transparent;
+  height: 49px;
+  left: calc(50.00% - 252px);
+  position: absolute;
+  top: calc(50.00% + 72px);
+  width: 242px;
+}
+
+.upload-lesson .rectangle-109-5KXCM5 {
+  background-color: var(--alabaster);
+  border-radius: 8px;
+  height: 49px;
+  left: calc(50.00% - 121px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 24px);
+  width: 240px;
+}
+
+.upload-lesson .price-5KXCM5 {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: calc(50.00% - 104px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: 205px;
+}
+
+.upload-lesson .price-5KXCM5::placeholder {
+  color: #49494999;
+}
+
+.upload-lesson .email-form-QfGauK {
+  background-color: transparent;
+  height: 49px;
+  left: calc(50.00% - 253px);
+  position: absolute;
+  top: calc(50.00% - 9px);
+  width: 242px;
+}
+
+.upload-lesson .rectangle-109-ag91HL {
+  background-color: var(--alabaster);
+  border-radius: 8px;
+  height: 49px;
+  left: calc(50.00% - 121px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 24px);
+  width: 240px;
+}
+
+.upload-lesson .subtitles-ag91HL {
+  background-color: transparent;
+  color: #00000099;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 104px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: 205px;
+}
+
+.upload-lesson .email-form-KaLBbF {
+  background-color: transparent;
+  height: 49px;
+  left: calc(50.00% - 252px);
+  position: absolute;
+  top: calc(50.00% + 153px);
+  width: 242px;
+}
+
+.upload-lesson .rectangle-109-IdHT9f {
+  background-color: var(--alabaster);
+  border-radius: 8px;
+  height: 49px;
+  left: calc(50.00% - 121px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 24px);
+  width: 240px;
+}
+
+.upload-lesson .duration-IdHT9f {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: calc(50.00% - 104px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: 205px;
+}
+
+.upload-lesson .duration-IdHT9f::placeholder {
+  color: #49494999;
+}
+
+.upload-lesson .email-form-viUVUt {
+  background-color: transparent;
+  height: 49px;
+  left: calc(50.00% - 252px);
+  position: absolute;
+  top: calc(50.00% + 234px);
+  width: 242px;
+}
+
+.upload-lesson .rectangle-109-XJTs7q {
+  background-color: var(--alabaster);
+  border-radius: 8px;
+  height: 49px;
+  left: calc(50.00% - 121px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 24px);
+  width: 240px;
+}
+
+.upload-lesson .class-level-XJTs7q {
+  background-color: transparent;
+  color: #646464;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 104px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: 205px;
+}
+
+.upload-lesson .email-form-fYBxK9 {
+  background-color: transparent;
+  height: 24px;
+  left: calc(50.00% - 181px);
+  position: absolute;
+  top: calc(50.00% + 344px);
+  width: 134px;
+}
+
+.upload-lesson .upload-video-class-F3guqA {
+  background-color: transparent;
+  color: #000000bf;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 67px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: auto;
+}
+
+.upload-lesson .email-form-vBParL {
+  background-color: transparent;
+  height: 24px;
+  left: calc(50.00% - 181px);
+  position: absolute;
+  top: calc(50.00% + 441px);
+  width: 143px;
+}
+
+.upload-lesson .upload-cover-image-EGZrVt {
+  background-color: transparent;
+  color: #000000bf;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% - 72px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 12px);
+  white-space: nowrap;
+  width: auto;
+}
+
+.upload-lesson .description-form-FPckae {
+  background-color: transparent;
+  height: 199px;
+  left: calc(50.00% - 252px);
+  position: absolute;
+  top: calc(50.00% - 471px);
+  width: 770px;
+}
+
+.upload-lesson .description-sC9ASi {
+  background-color: var(--alabaster);
+  border-radius: 8px;
+  height: 199px;
+  left: calc(50.00% - 385px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 100px);
+  width: 768px;
+}
+
+.upload-lesson .descprition-sC9ASi {
+  background-color: transparent;
+  border: 0;
+  height: 170px;
+  left: calc(50.00% - 368px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: calc(50.00% - 88px);
+  width: 741px;
+}
+
+.upload-lesson .descprition-sC9ASi::placeholder {
+  color: #49494999;
+}
+
+.upload-lesson .email-form-LpSJlS {
+  background-color: transparent;
+  height: 199px;
+  left: calc(50.00% - 252px);
+  position: absolute;
+  top: calc(50.00% - 240px);
+  width: 770px;
+}
+
+.upload-lesson .rectangle-109-glOBel {
+  background-color: var(--alabaster);
+  border-radius: 8px;
+  height: 199px;
+  left: calc(50.00% - 385px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 100px);
+  width: 768px;
+}
+
+.upload-lesson .which-labels-re-ent-this-lesson-glOBel {
+  background-color: transparent;
+  border: 0;
+  height: 174px;
+  left: calc(50.00% - 368px);
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: calc(50.00% - 88px);
+  width: 741px;
+}
+
+.upload-lesson .which-labels-re-ent-this-lesson-glOBel::placeholder {
+  color: #49494999;
+}
+
+.upload-lesson .upload-video-button-frame-FPckae {
+  background-color: transparent;
+  height: 48px;
+  left: calc(50.00% - 252px);
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% + 332px);
+  transition: all 0.2s ease;
+  width: 48px;
+}
+
+.upload-lesson .upload-video-button-frame-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .upload-video-image-t6Akau {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.upload-lesson .upload-video-image-t6Akau:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .upload-image-button-frame-FPckae {
+  background-color: transparent;
+  height: 48px;
+  left: calc(50.00% - 252px);
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% + 429px);
+  transition: all 0.2s ease;
+  width: 48px;
+}
+
+.upload-lesson .upload-image-button-frame-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .upload-image-button-WSFDcf {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.upload-lesson .upload-image-button-WSFDcf:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .button-confirm-upload-FPckae {
+  background-color: #00a692;
+  border-radius: 6px;
+  height: 40px;
+  left: calc(50.00% - 252px);
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: calc(50.00% + 526px);
+  transition: all 0.2s ease;
+  width: 240px;
+}
+
+.upload-lesson .button-confirm-upload-FPckae:hover {
+  transform: scale(1.1);
+}
+
+.upload-lesson .upload-s7kmxc {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 93px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  white-space: nowrap;
+  width: auto;
+}
+
+
+
+.playfairdisplay-normal-shark-16px {
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.playfairdisplay-normal-gravel-16px {
+  color: var(--gravel);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-1px-black {
+  border: 1px solid var(--black);
+}
+
+/* FIXME:  UPDATE LESSONS */
+
+
+.dropdown_instruments {
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  width: 50vw;
+  min-width: 320px;
+  height: 200px;
+}
+.dropdown_instruments h2 {
+  border-radius: 2px;
+  position: relative;
+  background: #262626;
+  height: 40px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 200;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 20px -2px rgba(0,0,0,.35);
+  transition: all .4s;
+}
+.dropdown_instruments:hover h2{
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 5px -1px rgba(0,0,0,.35);
+ }
+ .dropdown_instruments:hover:active h2{
+  transform: translateY(10px);
+  box-shadow: 0px -1px 2px 0px rgba(0,0,0,.35);
+ }
+ .dropdown_instruments input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+}
+#toggle:checked ~ul {
+  height: 0%;
+}
+.dropdown_instruments ul {
+  padding-left: 0;
+  padding-top: 0;
+  margin-top: 0;
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  margin-bottom: 22px;
+  text-align: center;
+  transition: all .4s ease-out;
+  height: 100%;
+}
+.dropdown_instruments ul li {
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 5px;
+  background: #262626;
+  transition: background 3s;
+  box-shadow: 2px 2px 10px -2px rgba(0,0,0,.35);
+}
+.dropdown_instruments ul li:hover {
+  background: #00A692;
+  transition: background .45s;
+}
+.dropdown_instruments ul a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+/* TODO: TEACHERS PAGE */
+.teachers-frame {
+  background-color: #FFFFFF;
+  height: 100vh;
+  margin: 0px;
+  min-height: 494px;
+  min-width: 1224px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.teachers-frame .group-518-Rv3fxv {
+  background-color: transparent;
+  height: 310px;
+  left: calc(50.00% - 508px);
+  position: relative;
+  top: calc(50.00% - 199px);
+  width: 1026px;
+}
+.teachers-frame .line-4-iinxvf {
+  background-color: transparent;
+  height: 2px;
+  left: calc(50.00% - 513px);
+  position: absolute;
+  top: calc(50.00% - 104px);
+  width: 1016px;
+}
+.teachers-frame .teachers-frame-iinxvf {
+  background-color: transparent;
+  height: 66px;
+  left: calc(50.00% - 513px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 155px);
+  width: 197px;
+}
+.teachers-frame .title-m0ECrz {
+  background-color: transparent;
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 900;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+.teachers-frame .sort-by-iinxvf {
+  background-color: transparent;
+  color: var(--shark);
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 900;
+  height: auto;
+  left: calc(50.00% - 511px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 59px);
+  width: auto;
+}
+.teachers-frame .a-to-z-iinxvf {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 511px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 20px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.teachers-frame .a-to-z-iinxvf:hover {
+  transform: scale(1.1);
+}
+.teachers-frame .z-to-a-iinxvf {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 513px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% + 14px);
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.teachers-frame .z-to-a-iinxvf:hover {
+  transform: scale(1.1);
+}
+.teachers-frame .frame-imagem-professor-iinxvf {
+  background-color: transparent;
+  height: 214px;
+  left: calc(50.00% - 305px);
+  position: absolute;
+  top: calc(50.00% - 59px);
+  width: 288px;
+}
+.teachers-frame .nome-do-prof-iinxvf {
+  background-color: transparent;
+  color: #000000;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: calc(50.00% + 7px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 59px);
+  width: auto;
+}
+.teachers-frame .lorem-ipsum-dol-es-pellentesque-iinxvf {
+  background-color: transparent;
+  color: #000000;
+  font-family: var(--font-family-playfair_display);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: calc(50.00% + 7px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 23px);
+  width: 498px;
+}
+/* FIXME: TEACHERS PAGE */

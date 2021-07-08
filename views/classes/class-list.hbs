@@ -1,1 +1,306 @@
-<h1>list class</h1>
+{{!-- {{#each classes}} --}}
+
+  {{!-- <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=1444, maximum-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+        <meta name="og:type" content="website" />
+        <meta name="twitter:card" content="photo" />
+        <link rel="stylesheet" type="text/css" href="css/01.css" />
+        <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+        <link rel="stylesheet" type="text/css" href="css/globals.css" />
+        <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+      </head>
+      <body style="margin: 0; background: #ffffff">
+        <input type="hidden" id="anPageName" name="page" value="lessons-filter" /> --}}
+        
+        
+        
+        
+        <div class="lessons-filter screen">
+          <img class="line-4-6t54R0" src="img/line-4@1x.png" />
+          <div class="guitar-lesson-6t54R0">
+            <div class="guitar-lessons-89XVyM">Guitar Lessons</div>
+            <div class="x121-results-89XVyM">121 results</div>
+          </div>
+          <div class="menu-lateral-filtro-6t54R0">
+            <div class="class-type-3E75Wu playfairdisplay-black-shark-16px">CLASS TYPE</div>
+            <div class="class-level-3E75Wu playfairdisplay-black-shark-16px">CLASS LEVEL</div>
+            <div class="class-length-3E75Wu playfairdisplay-black-shark-16px">CLASS LENGTH</div>
+            <div class="butoes-class-type-3E75Wu">
+              <div class="frame-357-Nvt9f6">
+                <img class="rectangle-118-MYxMb0" src="img/rectangle-118@2x.png" />
+                <div class="all-MYxMb0"><a href="/classes">All</a></div>
+              </div>
+              <div class="frame-358-Nvt9f6">
+                <div class="rectangle-119-8Yoxrq border-1px-black-2"></div>
+                <div class="payed-8Yoxrq playfairdisplay-black-shark-16px">Payed</div>
+              </div>
+              <div class="frame-359-Nvt9f6">
+                <img class="rectangle-120-ltlgkq" src="img/rectangle-120@2x.png" />
+                <div class="free-ltlgkq playfairdisplay-black-shark-16px">Free</div>
+              </div>
+            </div>
+            <div class="components-checkbox-inactive-3E75Wu">
+              <div class="stroke-dropshadow-Ierx30">
+                <div class="shadow-2-xnfCOn border-1px-black-2"></div>
+              </div>
+            </div>
+            <div class="beginner-3E75Wu playfairdisplay-normal-shark-16px">Beginner</div>
+            <div class="components-checkbox-inactive-xP3p0u">
+              <div class="stroke-dropshadow-rTndjG">
+                <div class="shadow-2-TB3voy border-1px-black-2"></div>
+              </div>
+            </div>
+            <div class="x15-min-3E75Wu playfairdisplay-normal-shark-16px">&lt; 15 min</div>
+            <div class="components-checkbox-inactive-TzT028">
+              <div class="stroke-dropshadow-bctL5Q">
+                <div class="shadow-2-bu05Cq border-1px-black-2"></div>
+              </div>
+            </div>
+            <div class="intermediate-3E75Wu playfairdisplay-normal-shark-16px">Intermediate</div>
+            <div class="components-checkbox-inactive-b1kO45">
+              <div class="stroke-dropshadow-D12Rix">
+                <div class="shadow-2-F7bawK border-1px-black-2"></div>
+              </div>
+            </div>
+            <div class="x15-30-min-3E75Wu playfairdisplay-normal-shark-16px">15 -30 min</div>
+            <div class="components-checkbox-inactive-29SN4L">
+              <div class="stroke-dropshadow-3LIcwT">
+                <div class="shadow-2-6INjRS border-1px-black-2"></div>
+              </div>
+            </div>
+            <div class="advanced-3E75Wu playfairdisplay-normal-shark-16px">Advanced</div>
+            <div class="components-checkbox-inactive-qB9Rc1">
+              <div class="stroke-dropshadow-aYoEn6">
+                <div class="shadow-2-0GGpwo border-1px-black-2"></div>
+              </div>
+            </div>
+            <div class="x30-60-min-3E75Wu playfairdisplay-normal-shark-16px">30 - 60 min</div>
+            <div class="components-checkbox-inactive-r3iMo8">
+              <div class="stroke-dropshadow-iTxidv">
+                <div class="shadow-2-V0Ek69 border-1px-black-2"></div>
+              </div>
+            </div>
+            <div class="x60-min-3E75Wu playfairdisplay-normal-shark-16px">&gt; 60 min</div>
+          </div>
+
+        {{#each classes}}
+          <div class="classes-list">
+                <a href="/class-detail">
+                <div class="card">
+                  <img src={{imageUrl}} class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title gabriel-silva-5fRA8d playfairdisplay-normal-shark-16px">{{title}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <p class="card-text"><small class="text-muted">{{price}}</small>¢</p>
+                    {{!-- <div class="group-115-XxIOyX">
+                      <img class="vector-xgqn26" src="img/vector-34@2x.png" /><img
+                        class="vector-5SILtC"
+                        src="img/vector-35@2x.png"
+                      />
+                      <a href="/buy-class"><img class="vector-dOmtcN" src="img/vector-36@2x.png" /></a>
+                    </div>
+                  </div>
+                  <div class="group-489-5fRA8d">
+                    <div class="group-482-Mw8uXD">
+                      <div class="ellipse-46-OMS0YR"></div>
+                      <img class="vector-OMS0YR" src="img/vector-37@2x.png" />
+                    </div>
+                  </div>
+                  </div> --}}
+                  </div>
+                </div>
+              </a>
+          </div>
+        {{/each}}
+          {{!-- <div class="card-aula-6t54R0">
+            <img class="rectangle-121-5fRA8d" src={{imageUrl}} />
+            <img
+              class="rectangle-122-5fRA8d"
+              src="img/rectangle-122@2x.png"
+            />
+            <div class="gabriel-silva-5fRA8d playfairdisplay-normal-shark-16px">{{title}}</div>
+            <div class="x15-students-5fRA8d playfairdisplay-normal-shark-16px">15 students</div>
+            <div class="x23m-5fRA8d playfairdisplay-normal-shark-16px">23m</div>
+            <div class="frame-43-5fRA8d">
+              <div class="learn-how-to-pl-e-in-every-tons-LOrPHR playfairdisplay-bold-shark-18px">
+                {{description}}
+              </div>
+            </div>
+            <div class="group-488-5fRA8d">
+              <div class="ellipse-45-XxIOyX"></div>
+              <div class="group-115-XxIOyX">
+                <img class="vector-xgqn26" src="img/vector-34@2x.png" /><img
+                  class="vector-5SILtC"
+                  src="img/vector-35@2x.png"
+                />
+                <a href="/buy-class"><img class="vector-dOmtcN" src="img/vector-36@2x.png" /></a>
+              </div>
+            </div>
+            <div class="group-489-5fRA8d">
+              <div class="group-482-Mw8uXD">
+                <div class="ellipse-46-OMS0YR"></div>
+                <img class="vector-OMS0YR" src="img/vector-37@2x.png" />
+              </div>
+            </div>
+          </div> --}}
+
+          {{!-- <div class="card-aula-4-6t54R0">
+            <img class="rectangle-121-puCt1x" src={{imageUrl}} />
+            <img
+              class="rectangle-122-puCt1x"
+              src="img/rectangle-122@2x.png"
+            />
+            <div class="gabriel-silva-puCt1x playfairdisplay-normal-shark-16px">{{title}}</div>
+            <div class="x15-students-puCt1x playfairdisplay-normal-shark-16px">15 students</div>
+            <div class="x23m-puCt1x playfairdisplay-normal-shark-16px">23m</div>
+            <div class="frame-43-puCt1x">
+              <div class="learn-how-to-pl-e-in-every-tons-3bSqZD playfairdisplay-bold-shark-18px">
+                {{description}}
+              </div>
+            </div>
+            <div class="group-488-puCt1x">
+              <div class="ellipse-45-OOA1rL"></div>
+              <div class="group-115-OOA1rL">
+                <img class="vector-XGYeYt" src="img/vector-34@2x.png" /><img
+                  class="vector-QbGAZu"
+                  src="img/vector-35@2x.png"
+                /><img class="vector-GjcFoE" src="img/vector-36@2x.png" />
+              </div>
+            </div>
+            <div class="group-489-puCt1x">
+              <div class="group-482-OebncF">
+                <div class="ellipse-46-cjCxEI"></div>
+                <img class="vector-cjCxEI" src="img/vector-37@2x.png" />
+              </div>
+            </div>
+          </div>
+          <div class="card-aula-5-6t54R0">
+            <img class="rectangle-121-H55kkQ" src={{imageUrl}} />
+            <img
+              class="rectangle-122-H55kkQ"
+              src="img/rectangle-122@2x.png"
+            />
+            <div class="gabriel-silva-H55kkQ playfairdisplay-normal-shark-16px">{{title}}</div>
+            <div class="x15-students-H55kkQ playfairdisplay-normal-shark-16px">15 students</div>
+            <div class="x23m-H55kkQ playfairdisplay-normal-shark-16px">23m</div>
+            <div class="frame-43-H55kkQ">
+              <div class="learn-how-to-pl-e-in-every-tons-baCI4y playfairdisplay-bold-shark-18px">
+                {{description}}
+              </div>
+            </div>
+            <div class="group-488-H55kkQ">
+              <div class="ellipse-45-GVvsY6"></div>
+              <div class="group-115-GVvsY6">
+                <img class="vector-B9jzgI" src="img/vector-34@2x.png" /><img
+                  class="vector-hQh7NJ"
+                  src="img/vector-35@2x.png"
+                /><img class="vector-rM2UtR" src="img/vector-36@2x.png" />
+              </div>
+            </div>
+            <div class="group-489-H55kkQ">
+              <div class="group-482-5yJ9xy">
+                <div class="ellipse-46-lsqNi8"></div>
+                <img class="vector-lsqNi8" src="img/vector-37@2x.png" />
+              </div>
+            </div>
+          </div>
+          <div class="card-aula-2-6t54R0">
+            <img class="rectangle-121-zKB7O9" src={{imageUrl}} />
+            <img
+              class="rectangle-122-zKB7O9"
+              src="img/rectangle-122@2x.png"
+            />
+            <div class="gabriel-silva-zKB7O9 playfairdisplay-normal-shark-16px">{{title}}</div>
+            <div class="x15-students-zKB7O9 playfairdisplay-normal-shark-16px">15 students</div>
+            <div class="x23m-zKB7O9 playfairdisplay-normal-shark-16px">23m</div>
+            <div class="frame-43-zKB7O9">
+              <div class="learn-how-to-pl-e-in-every-tons-8FNx7f playfairdisplay-bold-shark-18px">
+                {{description}}
+              </div>
+            </div>
+            <div class="group-488-zKB7O9">
+              <div class="ellipse-45-0IDIfR"></div>
+              <div class="group-115-0IDIfR">
+                <img class="vector-xh33Nn" src="img/vector-34@2x.png" /><img
+                  class="vector-hqpu27"
+                  src="img/vector-35@2x.png"
+                /><img class="vector-oMxPOW" src="img/vector-36@2x.png" />
+              </div>
+            </div>
+            <div class="group-489-zKB7O9">
+              <div class="group-482-ohk97n">
+                <div class="ellipse-46-YTjWQm"></div>
+                <img class="vector-YTjWQm" src="img/vector-37@2x.png" />
+              </div>
+            </div>
+          </div>
+          <div class="card-aula-3-6t54R0">
+            <img class="rectangle-121-Ds9J6s" src={{imageUrl}} /><img
+              class="rectangle-122-Ds9J6s"
+              src="img/rectangle-122@2x.png"
+            />
+            <div class="gabriel-silva-Ds9J6s playfairdisplay-normal-shark-16px">{{title}}</div>
+            <div class="x15-students-Ds9J6s playfairdisplay-normal-shark-16px">15 students</div>
+            <div class="x23m-Ds9J6s playfairdisplay-normal-shark-16px">23m</div>
+            <div class="frame-43-Ds9J6s">
+              <div class="learn-how-to-pl-e-in-every-tons-NfChcN playfairdisplay-bold-shark-18px">
+                {{description}}
+              </div>
+            </div>
+            <div class="group-488-Ds9J6s">
+              <div class="ellipse-45-RPxAkF"></div>
+              <div class="group-115-RPxAkF">
+                <img class="vector-PwMXCO" src="img/vector-34@2x.png" /><img
+                  class="vector-2PLqgM"
+                  src="img/vector-35@2x.png"
+                /><img class="vector-I928KN" src="img/vector-36@2x.png" />
+              </div>
+            </div>
+            <div class="group-489-Ds9J6s">
+              <div class="group-482-mhB1Gd">
+                <div class="ellipse-46-PnzeKz"></div>
+                <img class="vector-PnzeKz" src="img/vector-37@2x.png" />
+              </div>
+            </div>
+          </div>
+          <div class="card-aula-6-6t54R0">
+            <img class="rectangle-121-jTIUbh" src={{imageUrl}} /><img
+              class="rectangle-122-jTIUbh"
+              src="img/rectangle-122@2x.png"
+            />
+            <div class="gabriel-silva-jTIUbh playfairdisplay-normal-shark-16px">{{title}}</div>
+            <div class="x15-students-jTIUbh playfairdisplay-normal-shark-16px">15 students</div>
+            <div class="x23m-jTIUbh playfairdisplay-normal-shark-16px">23m</div>
+            <div class="frame-43-jTIUbh">
+              <div class="learn-how-to-pl-e-in-every-tons-myDxvF playfairdisplay-bold-shark-18px">
+                {{description}}
+              </div>
+            </div>
+
+        {{/each}} --}}
+{{!--         
+            <div class="group-488-jTIUbh">
+              <div class="ellipse-45-Oz08UC"></div>
+              <div class="group-115-Oz08UC">
+                <img class="vector-xh0QTN" src="img/vector-34@2x.png" /><img
+                  class="vector-2CXgXA"
+                  src="img/vector-35@2x.png"
+                /><img class="vector-VjcJyF" src="img/vector-36@2x.png" />
+              </div>
+            </div>
+            <div class="group-489-jTIUbh">
+              <div class="group-482-PAobhv">
+                <div class="ellipse-46-IM0CzT"></div>
+                <img class="vector-IM0CzT" src="img/vector-37@2x.png" />
+              </div>
+            </div>
+          </div>
+        </div> --}}
+      {{!-- </body>
+    </html> --}}
+
+{{!-- {{/each}} --}}

@@ -1,0 +1,276 @@
+<div class="mobile">
+    <input type="hidden" id="anPageName" name="page" value="01" /> <!-- Page 1 mobile -->
+    <div class="x01mobile screen">
+      <div class="group-300-JRPwhY">
+        <!-- video -->
+        <iframe
+          style="border: 0; pointer-events: auto"
+          id="ytplayer"
+          type="text/html"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/v8a2eQ8Zf4Y?rel=0&autoplay=1"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+        ></iframe>
+        <!-- video -->
+      </div>
+      <div class="frame-2-JRPwhY smart-layers-pointers">
+        <div class="become-a-student-AycRPz">
+          <a href="/signup-student">Become a Student</a>
+        </div>
+      </div>
+      <div class="frame-348-JRPwhY smart-layers-pointers">
+        <a href="/signup-teacher">Become a Teacher</a>
+      </div>
+      <div class="frame-346-JRPwhY">
+        <div class="group-251-djEqYa">
+          <div class="group-120-OpxGpX">
+            <div class="group-112-1VLgrl">
+              <form action="/search" method="GET">
+              <input type="search" type= "image" src="images/vector@2x.png" src="images/vector@2x.png" src="images/vector-1@2x.png" class="vector-cYPaqS">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="group-115-djEqYa">
+          <img class="vector-IIUiye" src="images/vector-2@2x.png" /><img
+            class="vector-bxG0cC"
+            src="images/vector-2@2x.png"
+          /><img class="vector-ulzKDX" src="images/vector-4@2x.png" />
+        </div>
+        <div class="user-djEqYa">
+          <a href="/login">
+            <img class="vector-yyugtx" src="images/vector-5@2x.png" /><img class="vector-AuppYV" src="images/vector-6@2x.png" />
+          </a>
+        </div>
+      </div>
+      <div class="rectangle-308-JRPwhY"></div>
+      <img class="line-53-JRPwhY" src="images/line-53@1x.png" />
+      <div class="frame-347-JRPwhY">
+        <div class="group-283-qfumvp">
+          <div class="group-120-HBepj2">
+            <div class="group-112-E53qFJ">
+              <img class="vector-JAIo7H" src="images/vector-7@2x.png" /><img
+                class="vector-igGEig"
+                src="images/vector-8@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="group-285-qfumvp">
+          <img class="vector-INGc1N" src="images/vector-9@2x.png" /><img
+            class="vector-ocPiWH"
+            src="images/vector-10@2x.png"
+          /><img class="vector-4LcPeW" src="images/vector-11@2x.png" />
+        </div>
+        <div class="user-qfumvp">
+          <a href="/login">
+            <img class="vector-iIlWN9" src="images/vector-12@2x.png" /><img
+              class="vector-XPRD2f"
+              src="images/vector-13@2x.png"/>
+          </a>
+        </div>
+      </div>
+      <div class="group-512-JRPwhY">
+        <div class="group-415-s8213u">
+          <img class="vector-XpGUk7" src="images/vector-14@2x.png" /><img
+            class="vector-eZ0uBz"
+            src="images/vector-14@2x.png"
+          /><img class="vector-Sb2aJQ" src="images/vector-14@2x.png" /><img
+            class="vector-CAMT1c"
+            src="images/vector-14@2x.png"
+          />
+        </div>
+        <a href="/"><img class="rectangle-140-s8213u" src="images/rectangle-140@2x.png" /></a>
+      </div>
+      <div class="rectangle-60-JRPwhY"></div>
+      <div class="group-212-JRPwhY">
+        <div class="group-211-JE2EVG">
+          <div class="rectangle-59-fQ7ITc"></div>
+          <div class="app-store-fQ7ITc">App Store</div>
+          <div class="download-on-the-fQ7ITc">download on the</div>
+          <img class="vector-fQ7ITc" src="images/vector-20@2x.png" />
+        </div>
+        <div class="group-210-JE2EVG">
+          <img class="vector-YI9lnx" src="images/vector-21@2x.png" /><img
+            class="vector-kNaeeP"
+            src="images/vector-22@2x.png"
+          />
+        </div>
+        <img class="vector-JE2EVG" src="images/vector-18@2x.png" /><img class="vector-dfxnBD" src="images/vector-19@2x.png" />
+        <div class="group-209-JE2EVG">
+          <img class="vector-BNXy1Q" src="images/vector-23@2x.png" /><img
+            class="vector-HdmxOH"
+            src="images/vector-24@2x.png"
+          /><img class="vector-vWCQOY" src="images/vector-25@2x.png" />
+        </div>
+      </div>
+      <div class="group-213-JRPwhY">
+        <div class="my-art-2021-lKBLxK manrope-normal-white-12px">© MyArt 2021</div>
+        <div class="terms-of-use-lKBLxK manrope-normal-white-12px">Terms of Use</div>
+        <div class="privacy-policy-lKBLxK manrope-normal-white-12px">Privacy Policy</div>
+        <img class="line-19-lKBLxK" src="images/line-19@2x.png" /><img class="line-20-lKBLxK" src="images/line-19@2x.png" />
+      </div>
+      <div class="frame-351-JRPwhY">
+        <div class="group-413-uqTtdt">
+          <div class="about-us-DhfjmT playfairdisplay-bold-white-16px">About us</div>
+          <div class="group-406-DhfjmT">
+            <img class="vector-xj5pHf" src="images/vector-26@2x.png" /><img
+              class="line-60-xj5pHf"
+              src="images/line-60@2x.png"
+            />
+          </div>
+        </div>
+        <div class="group-412-uqTtdt">
+          <div class="for-teachers-57RGau playfairdisplay-bold-white-16px">For teachers</div>
+          <div class="group-407-57RGau">
+            <img class="vector-SsfzoD" src="images/vector-26@2x.png" /><img
+              class="line-60-SsfzoD"
+              src="images/line-60@2x.png"
+            />
+          </div>
+        </div>
+        <div class="group-411-uqTtdt">
+          <div class="for-students-xspmn3 playfairdisplay-bold-white-16px">For students</div>
+          <div class="group-408-xspmn3">
+            <img class="vector-MNvQHN" src="images/vector-26@2x.png" /><img
+              class="line-60-MNvQHN"
+              src="images/line-60@2x.png"
+            />
+          </div>
+        </div>
+        <div class="group-410-uqTtdt">
+          <div class="top-categories-yfT3Wo playfairdisplay-bold-white-16px">Top Categories</div>
+          <div class="group-409-yfT3Wo">
+            <img class="vector-KOmQ8i" src="images/vector-26@2x.png" /><img
+              class="line-60-KOmQ8i"
+              src="images/line-60@2x.png"
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- page 1 mobile -->
+
+
+
+    <!-- page 1 tablet -->
+    <div class="tablet">
+    <div class="x01tablet screen">
+      <div class="rectangle-287-3dnVkj"></div>
+      <div class="group-300-3dnVkj">
+        <iframe
+          style="border: 0; pointer-events: auto"
+          id="ytplayer"
+          type="text/html"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/v8a2eQ8Zf4Y?rel=0&autoplay=1"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+        ></iframe>
+      </div>
+      <div class="frame-2-3dnVkj smart-layers-pointers">
+        <div class="become-a-student-HWbauP btn-est-tablet">
+          <a href="/signup-student">Become a Student</a>
+        </div>
+      </div>
+      <div class="frame-30-3dnVkj smart-layers-pointers">
+        <div class="become-a-teacher-HKZwO6">
+          <a href="/signup-teacher">Become a Teacher</a>
+        </div>
+      </div>
+      <div class="frame-346-3dnVkj">
+        <div class="group-251-GULpZx">
+          <div class="group-120-kmMd0r">
+            <div class="group-112-uo0Mob">
+              <form action="/search" method="GET">
+                <img class="vector-cHCy2X" src="images/vector@2x.png" /><img
+                class="vector-d44psp"
+                src="images/vector-1@2x.png"/>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="group-115-GULpZx">
+          <img class="vector-PCEln8" src="images/vector-2@2x.png" /><img
+            class="vector-6EpJQT"
+            src="images/vector-2@2x.png"
+          /><img class="vector-yzwnni" src="images/vector-4@2x.png" />
+        </div>
+        <div class="user-GULpZx">
+          <a href="/login">
+            <img class="vector-8rJTlq" src="images/vector-5@2x.png" /><img class="vector-2bNkGZ" src="images/vector-6@2x.png" />
+          </a>
+        </div>
+      </div>
+      <div class="frame-345-3dnVkj">
+        <a href="/"><img class="rectangle-140-RwvSWl" src="images/rectangle-140-1@2x.png" /></a>
+        <div class="frame-337-RwvSWl">
+          <div class="categories-kcfy8Q smart-layers-pointers playfairdisplay-normal-white-16px"> <a href="/classes">Categories</a></div>
+          <div class="teachers-kcfy8Q smart-layers-pointers playfairdisplay-normal-white-16px"> <a href="/teachers"> Teachers</a></div>
+          <div class="instruments-kcfy8Q smart-layers-pointers playfairdisplay-normal-white-16px"><a href="/classes"> Instruments</a></div>
+        </div>
+      </div>
+      <img class="line-53-3dnVkj" src="images/line-53-1@1x.png" />
+      <div class="rectangle-60-3dnVkj"></div>
+      <div class="frame-350-3dnVkj">
+        <div class="group-206-uGxRJq">
+          <div class="for-students-eOPrvU playfairdisplay-bold-white-18px">For Students</div>
+          <div class="students-faq-eOPrvU manrope-normal-white-14px">Students Faq</div>
+          <div class="gift-card-eOPrvU manrope-normal-white-14px">Gift Card</div>
+        </div>
+        <div class="group-205-uGxRJq">
+          <div class="for-teachers-XeYH8x playfairdisplay-bold-white-18px">For teachers</div>
+          <div class="terms-conditions-XeYH8x manrope-normal-white-14px">Terms &amp; Conditions</div>
+          <div class="sellers-faq-XeYH8x manrope-normal-white-14px">Sellers Faq</div>
+          <div class="how-to-sell-XeYH8x manrope-normal-white-14px">How to Sell</div>
+        </div>
+        <div class="group-204-uGxRJq">
+          <div class="about-us-CgvEMY playfairdisplay-bold-white-18px">About Us</div>
+          <div class="about-us-fdIYPV manrope-normal-white-14px">About Us</div>
+          <div class="press-CgvEMY manrope-normal-white-14px">Press</div>
+          <div class="affiliates-CgvEMY manrope-normal-white-14px">Affiliates</div>
+        </div>
+        <div class="group-207-uGxRJq">
+          <div class="top-categories-1g1l7d playfairdisplay-bold-white-18px">Top Categories</div>
+          <div class="guitar-1g1l7d manrope-normal-white-14px">Guitar</div>
+          <div class="drums-1g1l7d manrope-normal-white-14px">Drums</div>
+          <div class="piano-1g1l7d manrope-normal-white-14px">Piano</div>
+        </div>
+      </div>
+      <div class="group-212-3dnVkj">
+        <div class="group-210-xVLxek">
+          <img class="vector-gpTftP" src="images/vector-21@2x.png" /><img
+            class="vector-2Npp9C"
+            src="images/vector-22@2x.png"
+          />
+        </div>
+        <img class="vector-xVLxek" src="images/vector-18@2x.png" /><img class="vector-vKZ1HG" src="images/vector-19@2x.png" />
+        <div class="group-209-xVLxek">
+          <img class="vector-bt2rWA" src="images/vector-55@2x.png" /><img
+            class="vector-TqUxLi"
+            src="images/vector-24@2x.png"
+          /><img class="vector-2EMsEb" src="images/vector-25@2x.png" />
+        </div>
+      </div>
+      <div class="group-213-3dnVkj">
+        <div class="musicorum-2021-sIFx4i manrope-normal-white-12px">© Musicorum 2021</div>
+        <div class="terms-of-use-sIFx4i manrope-normal-white-12px">Terms of Use</div>
+        <div class="privacy-policy-sIFx4i manrope-normal-white-12px">Privacy Policy</div>
+        <img class="line-19-sIFx4i" src="images/line-19@2x.png" /><img class="line-20-sIFx4i" src="images/line-19@2x.png" />
+      </div>
+    </div>
+  </div>

@@ -20,13 +20,13 @@ const userSchema = new Schema({
   description: {
     type: String,
   },
-  occupation: {
+  instrument: {
     type: String,
   },
   dateBorn: {
     type: Date,
   },
-  role: String //Student //Teacher
+  role: String,
 });
 
 const User = model("User", userSchema);

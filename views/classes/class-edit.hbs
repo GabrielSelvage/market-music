@@ -1,1 +1,26 @@
 <h1>Class Edit</h1>
+
+<div class="popUp create-class">
+    
+    <form action="/classes/:classId/edit" method="POST" enctype="multipart/form-data">
+        <label>Title</label>
+        <input type="text" name="title" />
+            <br>
+        <label>Description</label>
+        <textarea row="5" cols="20" name="description"></textarea>
+            <br>
+        <label>Price</label>
+        <input type="text" name="price" />
+            <br>
+        {{!-- <label>Video</label>
+        <input type="file" name="video" /> --}}
+            <br>
+        <label>Image</label>
+        <input type="file" name="image" />
+            <br>
+        <label>Tags</label>
+        <input type="text" name="tags" />
+            <br>
+        <button type="submit">Update</button>
+    </form>
+</div>

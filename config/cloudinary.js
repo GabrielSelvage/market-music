@@ -14,8 +14,8 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: "books",
-    allowed_formats: ["png", "jpg"],
+    folder: "lessons",
+    allowed_formats: ["png", "jpg", "mov", "mpeg", "mp4"],
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);
