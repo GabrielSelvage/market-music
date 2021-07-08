@@ -5907,3 +5907,9 @@ transform: scale(1.1);
   width: 498px;
 }
 /* FIXME: TEACHERS PAGE */
+
+.login-DdEuiy, .manrope-bold-white-16px button{
+  background-color: transparent;
+  color: white;
+  border-style: none;
+}

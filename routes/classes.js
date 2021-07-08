@@ -9,23 +9,17 @@ router.get("/create-class", (req, res) => {
 });
 
 router.post("/create-class", fileUpload.single("image"), async (req, res) => {
-  console.log(req.file.path);
   try {
-    // let fileUrlOnCloudinaryVideo = "";
-    // if (req.file) {
-    //   fileUrlOnCloudinaryVideo = req.file.path; 
-    // }
-    let fileUrlOnCloudinaryImage = "";
+    let fileUrlOnCloudinary = "";
     if (req.file) {
-      fileUrlOnCloudinaryImage = req.file.path; 
+      fileUrlOnCloudinary = req.file.path; 
     }
   const {title, description, price, tags} = req.body;
     await Class.create({
       title,
       description,
       price,
-      //video: fileUrlOnCloudinaryVideo,
-      imageUrl: fileUrlOnCloudinaryImage,
+      imageUrl: fileUrlOnCloudinary,
       tags,
   });
   console.log("create");

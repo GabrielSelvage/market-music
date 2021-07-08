@@ -1,72 +1,79 @@
-    <input type="hidden" id="anPageName" name="page" value="upload-lesson" />
-    <div class="upload-lesson screen">
-      <h1 class="title-FPckae">Profile / Upload CLass</h1>
-      <div class="gabriel-santos-FPckae">Gabriel Santos</div>
-      <div class="edit-profile-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">EDIT PROFILE</div>
-      <div class="upload-class-FPckae smart-layers-pointers">UPLOAD CLASS</div>
-      <div class="edit-class-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">EDIT CLASS</div>
-      <div class="account-settings-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">
-        ACCOUNT SETTINGS
+    <form action="/create-class" method="POST" enctype="multipart/form-data">
+      <input type="hidden" id="anPageName" name="page" value="upload-lesson" />
+      <div class="upload-lesson screen">
+        <h1 class="title-FPckae">Profile / Upload CLass</h1>
+        <div class="gabriel-santos-FPckae">Gabriel Santos</div>
+        <div class="edit-profile-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">EDIT PROFILE</div>
+        <div class="upload-class-FPckae smart-layers-pointers">UPLOAD CLASS</div>
+        <div class="edit-class-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">EDIT CLASS</div>
+        <div class="account-settings-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">
+          ACCOUNT SETTINGS
+        </div>
+        <div class="password-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">PASSWORD</div>
+        <div class="social-profiles-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">SOCIAL PROFILES</div>
+        <div class="email-notifications-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">
+          EMAIL NOTIFICATIONS
+        </div>
+        <div class="foto-gabriel-grupo-FPckae">
+          <img class="foto-gabriel-profile-dZuBXd" src="img/foto-gabriel-profile@2x.png" />
+        </div>
+        <img class="line-61-FPckae" src="img/line-61@2x.png" /><img class="line-4-FPckae" src="img/line-4@1x.png" />
+        <div class="title-form-FPckae">
+          <div class="rectangle-title-wTwN8W border-1px-black"></div>
+          <input class="title-wTwN8W playfairdisplay-normal-gravel-16px" name="title" placeholder="Title" type="text" />
+        </div>
+        <div class="email-form-FPckae">
+          <div class="rectangle-109-5KXCM5 border-1px-black"></div>
+          <input class="price-5KXCM5 playfairdisplay-normal-gravel-16px" name="price" placeholder="Price" type="text" />
+        </div>
+        <div class="email-form-QfGauK">
+          <div class="rectangle-109-ag91HL border-1px-black"></div>
+          <div class="subtitles-ag91HL">Subtitles</div>
+        </div>
+        <div class="email-form-KaLBbF">
+          <div class="rectangle-109-IdHT9f border-1px-black"></div>
+          <input
+            class="duration-IdHT9f playfairdisplay-normal-gravel-16px"
+            name="duration"
+            placeholder="Duration"
+            type="text"
+          />
+        </div>
+        <div class="email-form-viUVUt">
+          <div class="rectangle-109-XJTs7q border-1px-black"></div>
+          <div class="class-level-XJTs7q">Class level</div>
+        </div>
+        <div class="email-form-fYBxK9"><div class="upload-video-class-F3guqA"><input type="file" placeholder="Upload video class"></div></div>
+        <div class="email-form-vBParL"><div class="upload-cover-image-EGZrVt"><input type="file" placeholder="cover image" name="imageUrl"></div></div>
+        <div class="description-form-FPckae">
+          <div class="description-sC9ASi border-1px-black"></div>
+          <textarea
+            class="descprition-sC9ASi playfairdisplay-normal-gravel-16px"
+            name="description"
+            placeholder="Description"
+            type="text"
+          ></textarea>
+        </div>
+        <div class="email-form-LpSJlS">
+          <div class="rectangle-109-glOBel border-1px-black"></div>
+          <textarea
+            class="which-labels-re-ent-this-lesson-glOBel playfairdisplay-normal-gravel-16px"
+            name="whichlabelsrepresentthislesson"
+            placeholder="Wich labels represent this lesson"
+            type="text"
+          ></textarea>
+        </div>
+        <div class="upload-video-button-frame-FPckae smart-layers-pointers">
+          <img class="upload-video-image-t6Akau smart-layers-pointers" src="img/upload-video-image@2x.png" />
+        </div>
+        <div class="upload-image-button-frame-FPckae smart-layers-pointers">
+          <img class="upload-image-button-WSFDcf smart-layers-pointers" src="img/upload-video-image@2x.png" />
+        </div>
+        <div class="button-confirm-upload-FPckae smart-layers-pointers"><div class="upload-s7kmxc">
+          <button type="submit">
+            Upload
+          </button>
+          </div>
+        </div>
       </div>
-      <div class="password-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">PASSWORD</div>
-      <div class="social-profiles-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">SOCIAL PROFILES</div>
-      <div class="email-notifications-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">
-        EMAIL NOTIFICATIONS
-      </div>
-      <div class="foto-gabriel-grupo-FPckae">
-        <img class="foto-gabriel-profile-dZuBXd" src="img/foto-gabriel-profile@2x.png" />
-      </div>
-      <img class="line-61-FPckae" src="img/line-61@2x.png" /><img class="line-4-FPckae" src="img/line-4@1x.png" />
-      <div class="title-form-FPckae">
-        <div class="rectangle-title-wTwN8W border-1px-black"></div>
-        <input class="title-wTwN8W playfairdisplay-normal-gravel-16px" name="title" placeholder="Title" type="text" />
-      </div>
-      <div class="email-form-FPckae">
-        <div class="rectangle-109-5KXCM5 border-1px-black"></div>
-        <input class="price-5KXCM5 playfairdisplay-normal-gravel-16px" name="price" placeholder="Price" type="text" />
-      </div>
-      <div class="email-form-QfGauK">
-        <div class="rectangle-109-ag91HL border-1px-black"></div>
-        <div class="subtitles-ag91HL">Subtitles</div>
-      </div>
-      <div class="email-form-KaLBbF">
-        <div class="rectangle-109-IdHT9f border-1px-black"></div>
-        <input
-          class="duration-IdHT9f playfairdisplay-normal-gravel-16px"
-          name="duration"
-          placeholder="Duration"
-          type="text"
-        />
-      </div>
-      <div class="email-form-viUVUt">
-        <div class="rectangle-109-XJTs7q border-1px-black"></div>
-        <div class="class-level-XJTs7q">Class level</div>
-      </div>
-      <div class="email-form-fYBxK9"><div class="upload-video-class-F3guqA">Upload video class</div></div>
-      <div class="email-form-vBParL"><div class="upload-cover-image-EGZrVt">Upload cover image</div></div>
-      <div class="description-form-FPckae">
-        <div class="description-sC9ASi border-1px-black"></div>
-        <textarea
-          class="descprition-sC9ASi playfairdisplay-normal-gravel-16px"
-          name="descprition"
-          placeholder="Description"
-          type="text"
-        ></textarea>
-      </div>
-      <div class="email-form-LpSJlS">
-        <div class="rectangle-109-glOBel border-1px-black"></div>
-        <textarea
-          class="which-labels-re-ent-this-lesson-glOBel playfairdisplay-normal-gravel-16px"
-          name="whichlabelsrepresentthislesson"
-          placeholder="Wich labels represent this lesson"
-          type="text"
-        ></textarea>
-      </div>
-      <div class="upload-video-button-frame-FPckae smart-layers-pointers">
-        <img class="upload-video-image-t6Akau smart-layers-pointers" src="img/upload-video-image@2x.png" />
-      </div>
-      <div class="upload-image-button-frame-FPckae smart-layers-pointers">
-        <img class="upload-image-button-WSFDcf smart-layers-pointers" src="img/upload-video-image@2x.png" />
-      </div>
-      <div class="button-confirm-upload-FPckae smart-layers-pointers"><div class="upload-s7kmxc">Upload</div></div>
-    </div>
+    </form>

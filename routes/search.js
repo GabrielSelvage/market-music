@@ -1,18 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../models/User.model");
-const fileUpload = require("../config/cloudinary");
+const Class = require("../models/Class.model");
 
 router.get('/search', async (req, res) => {
     try {
-      const search = req.query.search;
-      console.log('keyword', search);
-      const results = await User.find({
-        title: {
+      const {search} = req.query;
+      console.log("Search", search);
+      const results = await Class.find({
+        username: {
           $regex: '.*' + search + '.*',
           $options: 'i'
         }
-      }).populate('tags');
+      })// .populate('tags');
       console.log('result', results);
       res.render('result/result', {
         results
