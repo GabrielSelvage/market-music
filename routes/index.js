@@ -13,11 +13,11 @@ router.get("/", (req, res, next) => {
   res.render("01");
 });
 
-router.get("/student",  requireLogin, (req, res, next) =>{
+router.get("/student",  /*requireLogin, */(req, res, next) =>{
   res.render("student-home-desktop");
 });
 
-router.get("/teacher",  requireLogin, (req, res, next) => {
+router.get("/teacher", requireLogin, (req, res, next) => {
   res.render("teacher-home-desktop");
 });
 

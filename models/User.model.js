@@ -23,8 +23,8 @@ const userSchema = new Schema({
   instrument: {
     type: String,
   },
-  dateBorn: {
-    type: Date,
+  name: {
+    type: String,
   },
   role: String,
 });

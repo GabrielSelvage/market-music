@@ -4,12 +4,20 @@ const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
 const fileUpload = require("../config/cloudinary");
 
+function requireLogin(req, res, next){
+  if (req.session.currentUser) {
+    next();
+  } else {
+    res.redirect("/login");
+  }
+}
+
 router.get("/login", (req, res) => {
   res.render("auth/login");
 });
 
 router.post("/login", async (req, res) => {
-    const {username, password} = req.body;
+    const {username, password, role} = req.body;
   
     if(!username === "" || !password === "") {
       res.render('auth/login', {
@@ -86,6 +94,21 @@ router.post("/signup-student", fileUpload.single("image"), async (req, res) => {
   res.redirect("/student");
 });
 
+router.get("/beteacher", requireLogin, (req, res)=>{
+  res.render("auth/beteacher");
+})
+
+router.post("/beteacher", async (req, res) => {
+  const {name, description, instrument}= req.body;
+  await User.findByIdAndUpdate(
+    {description: description,
+    instrument: instrument,
+    name: name,
+    role: "teacher",
+  });
+  res.redirect("/teacher");
+});
+
 router.get("/signup-teacher", (req, res) => {
   res.render("auth/signup-teacher");
 });
@@ -131,7 +154,6 @@ router.post("/signup-teacher", fileUpload.single("image"), async (req, res) => {
     imageUrl: fileUrlOnCloudinary,
     description: description,
     instrument: instrument,
-    dateBorn: dateBorn,
     role: "teacher",
 });
   res.redirect("/teacher");
