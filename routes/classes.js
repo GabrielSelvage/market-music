@@ -14,13 +14,13 @@ router.post("/create-class", fileUpload.single("image"), async (req, res) => {
     if (req.file) {
       fileUrlOnCloudinary = req.file.path; 
     }
-  const {title, description, price, tags} = req.body;
+  const {title, description, price, about} = req.body;
     await Class.create({
       title,
       description,
       price,
       imageUrl: fileUrlOnCloudinary,
-      tags,
+      about,
   });
   console.log("create");
   res.redirect("/classes");
@@ -34,6 +34,8 @@ router.get("/classes", async (req, res) => {
   console.log(classes);
   res.render("classes/class-list", { classes });
 });
+
+
 
 router.post("/classes/:classId/delete", async (req, res) => {
   await Class.findByIdAndRemove(req.params.classId);
@@ -56,14 +58,14 @@ router.post("/classes/:classId/edit", async (req, res) => {
     if (req.file) {
       fileUrlOnCloudinaryImage = req.file.path; 
     }
-  const {title, description, price, tags} = req.body;
+  const {title, description, price, about} = req.body;
     await Class.create({
       title,
       description,
       price,
       //video: fileUrlOnCloudinaryVideo,
       imageUrl: fileUrlOnCloudinaryImage,
-      tags,
+      about,
   });
   console.log("edit");
   res.redirect("/classes");

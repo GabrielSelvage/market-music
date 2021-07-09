@@ -1,169 +1,190 @@
-{{!-- {{#each classes}} --}}
-
-  {{!-- <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=1444, maximum-scale=1.0" />
-        <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
-        <meta name="og:type" content="website" />
-        <meta name="twitter:card" content="photo" />
-        <link rel="stylesheet" type="text/css" href="css/01.css" />
-        <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-        <link rel="stylesheet" type="text/css" href="css/globals.css" />
-        <meta name="author" content="AnimaApp.com - Design to code, Automated." />
-      </head>
-      <body style="margin: 0; background: #ffffff">
-        <input type="hidden" id="anPageName" name="page" value="lessons-filter" /> --}}
-        
-        
-        
-        
-        <div class="lessons-filter screen">
-          <img class="line-4-6t54R0" src="img/line-4@1x.png" />
-          <div class="guitar-lesson-6t54R0">
-            <div class="guitar-lessons-89XVyM">Guitar Lessons</div>
-            <div class="x121-results-89XVyM">121 results</div>
-          </div>
-          <div class="menu-lateral-filtro-6t54R0">
-            <div class="class-type-3E75Wu playfairdisplay-black-shark-16px">CLASS TYPE</div>
-            <div class="class-level-3E75Wu playfairdisplay-black-shark-16px">CLASS LEVEL</div>
-            <div class="class-length-3E75Wu playfairdisplay-black-shark-16px">CLASS LENGTH</div>
-            <div class="butoes-class-type-3E75Wu">
-              <div class="frame-357-Nvt9f6">
-                <img class="rectangle-118-MYxMb0" src="img/rectangle-118@2x.png" />
-                <div class="all-MYxMb0"><a href="/classes">All</a></div>
-              </div>
-              <div class="frame-358-Nvt9f6">
-                <div class="rectangle-119-8Yoxrq border-1px-black-2"></div>
-                <div class="payed-8Yoxrq playfairdisplay-black-shark-16px">Payed</div>
-              </div>
-              <div class="frame-359-Nvt9f6">
-                <img class="rectangle-120-ltlgkq" src="img/rectangle-120@2x.png" />
-                <div class="free-ltlgkq playfairdisplay-black-shark-16px">Free</div>
-              </div>
-            </div>
-            <div class="components-checkbox-inactive-3E75Wu">
-              <div class="stroke-dropshadow-Ierx30">
-                <div class="shadow-2-xnfCOn border-1px-black-2"></div>
-              </div>
-            </div>
-            <div class="beginner-3E75Wu playfairdisplay-normal-shark-16px">Beginner</div>
-            <div class="components-checkbox-inactive-xP3p0u">
-              <div class="stroke-dropshadow-rTndjG">
-                <div class="shadow-2-TB3voy border-1px-black-2"></div>
-              </div>
-            </div>
-            <div class="x15-min-3E75Wu playfairdisplay-normal-shark-16px">&lt; 15 min</div>
-            <div class="components-checkbox-inactive-TzT028">
-              <div class="stroke-dropshadow-bctL5Q">
-                <div class="shadow-2-bu05Cq border-1px-black-2"></div>
-              </div>
-            </div>
-            <div class="intermediate-3E75Wu playfairdisplay-normal-shark-16px">Intermediate</div>
-            <div class="components-checkbox-inactive-b1kO45">
-              <div class="stroke-dropshadow-D12Rix">
-                <div class="shadow-2-F7bawK border-1px-black-2"></div>
-              </div>
-            </div>
-            <div class="x15-30-min-3E75Wu playfairdisplay-normal-shark-16px">15 -30 min</div>
-            <div class="components-checkbox-inactive-29SN4L">
-              <div class="stroke-dropshadow-3LIcwT">
-                <div class="shadow-2-6INjRS border-1px-black-2"></div>
-              </div>
-            </div>
-            <div class="advanced-3E75Wu playfairdisplay-normal-shark-16px">Advanced</div>
-            <div class="components-checkbox-inactive-qB9Rc1">
-              <div class="stroke-dropshadow-aYoEn6">
-                <div class="shadow-2-0GGpwo border-1px-black-2"></div>
-              </div>
-            </div>
-            <div class="x30-60-min-3E75Wu playfairdisplay-normal-shark-16px">30 - 60 min</div>
-            <div class="components-checkbox-inactive-r3iMo8">
-              <div class="stroke-dropshadow-iTxidv">
-                <div class="shadow-2-V0Ek69 border-1px-black-2"></div>
-              </div>
-            </div>
-            <div class="x60-min-3E75Wu playfairdisplay-normal-shark-16px">&gt; 60 min</div>
-          </div>
-
-        {{#each classes}}
-          <div class="card-aula-6t54R0">
-            <img class="rectangle-121-5fRA8d" src={{imageUrl}} />
-            <img
-              class="rectangle-122-5fRA8d"
-              src="img/rectangle-122@2x.png"
-            />
-            <div class="gabriel-silva-5fRA8d playfairdisplay-normal-shark-16px">{{title}}</div>
-            <div class="x15-students-5fRA8d playfairdisplay-normal-shark-16px">15 students</div>
-            <div class="x23m-5fRA8d playfairdisplay-normal-shark-16px">23m</div>
-            <div class="frame-43-5fRA8d">
-              <div class="learn-how-to-pl-e-in-every-tons-LOrPHR playfairdisplay-bold-shark-18px">
-                {{description}}
-              </div>
-            </div>
-            <div class="group-488-5fRA8d">
-              <div class="ellipse-45-XxIOyX"></div>
-              <div class="group-115-XxIOyX">
-                <img class="vector-xgqn26" src="img/vector-34@2x.png" /><img
-                  class="vector-5SILtC"
-                  src="img/vector-35@2x.png"
-                />
-                <a href="/buy-class"><img class="vector-dOmtcN" src="img/vector-36@2x.png" /></a>
-              </div>
-            </div>
-            <div class="group-489-5fRA8d">
-              <div class="group-482-Mw8uXD">
-                <div class="ellipse-46-OMS0YR"></div>
-                <img class="vector-OMS0YR" src="img/vector-37@2x.png" />
-              </div>
-            </div>
-          </div>
-        {{/each}}
-
-
-        <!-- footer -->
-
-        <input type="hidden" id="anPageName" name="page" value="footer" />
-    <div class="footer screen">
-      <div class="footer-background-color-OpYFEQ"></div>
-      <div class="registo-marca-footer-OpYFEQ"><div class="musicorum-2021-VeQGn1">© Musicorum 2021</div></div>
-      <div class="categorias-footer-OpYFEQ">
-        <div class="group-206-D6atBk">
-          <div class="for-students-SiBJct playfairdisplay-bold-white-18px">For Students</div>
-          <div class="students-faq-SiBJct manrope-normal-white-14px">Students Faq</div>
-          <div class="gift-card-SiBJct manrope-normal-white-14px">Gift Card</div>
-        </div>
-        <div class="group-205-D6atBk">
-          <div class="for-teachers-FhKgCF playfairdisplay-bold-white-18px">For teachers</div>
-          <div class="terms-and-conditions-FhKgCF manrope-normal-white-14px">Terms and Conditions</div>
-          <div class="sellers-faq-FhKgCF manrope-normal-white-14px">Sellers Faq</div>
-          <div class="how-to-sell-FhKgCF manrope-normal-white-14px">How to Sell</div>
-        </div>
-        <div class="group-204-D6atBk">
-          <div class="about-us-QxQr1H playfairdisplay-bold-white-18px">About Us</div>
-          <div class="about-us-xEDjf3 manrope-normal-white-14px">About Us</div>
-          <div class="press-QxQr1H manrope-normal-white-14px">Press</div>
-          <div class="affiliates-QxQr1H manrope-normal-white-14px">Affiliates</div>
-        </div>
-        <div class="group-207-D6atBk">
-          <div class="top-categories-ucallr playfairdisplay-bold-white-18px">Top Categories</div>
-          <div class="guitar-ucallr manrope-normal-white-14px">Guitar</div>
-          <div class="drums-ucallr manrope-normal-white-14px">Drums</div>
-          <div class="piano-ucallr manrope-normal-white-14px">Piano</div>
+<input type="hidden" id="anPageName" name="page" value="lessons-filter" />
+<div class="lessons-filter screen">
+  {{!-- <img class="line-4-6t54R0" src="img/line-4@1x.png" /> --}}
+  <div class="guitar-lesson-6t54R0">
+    <div class="guitar-lessons-89XVyM">Guitar Lessons</div>
+    <div class="x121-results-89XVyM">121 results</div>
+  </div>
+  <div class="menu-lateral-filtro-6t54R0">
+    <div class="class-type-3E75Wu playfairdisplay-black-shark-16px">CLASS TYPE</div>
+    <div class="class-level-3E75Wu playfairdisplay-black-shark-16px">CLASS LEVEL</div>
+    <div class="class-length-3E75Wu playfairdisplay-black-shark-16px">CLASS LENGTH</div>
+    <div class="butoes-class-type-3E75Wu">
+      <div class="frame-357-Nvt9f6">
+        <img class="rectangle-118-MYxMb0" src="img/rectangle-118@2x.png" />
+        <div class="all-MYxMb0">
+        <a href="/classes">
+          All
+        </a>
         </div>
       </div>
-      <div class="frame-footer-icons-OpYFEQ">
-        <div class="footer-icons-group-GWI0ft">
-          <div class="facebook-icon-dJH0wx">
-            <img class="facebook-icon-footer-OTbdFk" src="img/facebook-icon-footer@2x.png" />
-          </div>
-          <div class="instagram-icon-dJH0wx">
-            <img class="instagram-icon-footer-S0S0jP" src="img/instagram-icon-footer@2x.png" />
-          </div>
-          <div class="twiiter-icon-dJH0wx">
-            <img class="twitter-icon-footer-7qkrV0" src="img/twitter-icon-footer@2x.png" />
-          </div>
-        </div>
+      <div class="frame-358-Nvt9f6">
+        <div class="rectangle-119-8Yoxrq border-1px-black-2"></div>
+        <div class="payed-8Yoxrq playfairdisplay-black-shark-16px">
+        <a href="/teachers">
+          Payed
+        </a>
+      </div>
+      </div>
+      <div class="frame-359-Nvt9f6">
+        <img class="rectangle-120-ltlgkq" src="img/rectangle-120@2x.png" />
+        <div class="free-ltlgkq playfairdisplay-black-shark-16px">
+        <a href="/login">
+          Free
+        </a>
+      </div>
       </div>
     </div>
+    <div class="components-checkbox-inactive-3E75Wu">
+      <div class="stroke-dropshadow-Ierx30">
+        <div class="shadow-2-xnfCOn border-1px-black-2"></div>
+      </div>
+    </div>
+    <div class="beginner-3E75Wu playfairdisplay-normal-shark-16px">Beginner</div>
+    <div class="components-checkbox-inactive-xP3p0u">
+      <div class="stroke-dropshadow-rTndjG">
+        <div class="shadow-2-TB3voy border-1px-black-2"></div>
+      </div>
+    </div>
+    <div class="x15-min-3E75Wu playfairdisplay-normal-shark-16px">&lt; 15 min</div>
+    <div class="components-checkbox-inactive-TzT028">
+      <div class="stroke-dropshadow-bctL5Q">
+        <div class="shadow-2-bu05Cq border-1px-black-2"></div>
+      </div>
+    </div>
+    <div class="intermediate-3E75Wu playfairdisplay-normal-shark-16px">Intermediate</div>
+    <div class="components-checkbox-inactive-b1kO45">
+      <div class="stroke-dropshadow-D12Rix">
+        <div class="shadow-2-F7bawK border-1px-black-2"></div>
+      </div>
+    </div>
+    <div class="x15-30-min-3E75Wu playfairdisplay-normal-shark-16px">15 -30 min</div>
+    <div class="components-checkbox-inactive-29SN4L">
+      <div class="stroke-dropshadow-3LIcwT">
+        <div class="shadow-2-6INjRS border-1px-black-2"></div>
+      </div>
+    </div>
+    <div class="advanced-3E75Wu playfairdisplay-normal-shark-16px">Advanced</div>
+    <div class="components-checkbox-inactive-qB9Rc1">
+      <div class="stroke-dropshadow-aYoEn6">
+        <div class="shadow-2-0GGpwo border-1px-black-2"></div>
+      </div>
+    </div>
+    <div class="x30-60-min-3E75Wu playfairdisplay-normal-shark-16px">30 - 60 min</div>
+    <div class="components-checkbox-inactive-r3iMo8">
+      <div class="stroke-dropshadow-iTxidv">
+        <div class="shadow-2-V0Ek69 border-1px-black-2"></div>
+      </div>
+    </div>
+    <div class="x60-min-3E75Wu playfairdisplay-normal-shark-16px">&gt; 60 min</div>
+  </div>
+
+
+
+  <div class="box-classes" style="border: 0px solid black; margin: 20px 0 0 370px; width: 880px; height: 5000px">
+    <div class="container">
+      <div class="row">
+        {{#each classes}}
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src={{imageUrl}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{title}}</h5>
+              <p class="card-text">{{description}}</p>
+              <p class="card-text price-bold">{{price}}</p>
+              <a href="#" class="btn btn-primary">check details</a>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{!-- <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">classe</h5>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores hic modi quam quasi ipsa
+          fugit vero iusto eaque? Perferendis, voluptate expedita. In officiis quod consequuntur veniam eaque dolore ab
+          harum?</p>
+        <a href="#" class="btn btn-primary">check details</a>
+      </div> --}}
+
+      {{!-- <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">classe</h5>
+      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores hic modi quam quasi ipsa
+        fugit vero iusto eaque? Perferendis, voluptate expedita. In officiis quod consequuntur veniam eaque dolore ab
+        harum?</p>
+      <a href="#" class="btn btn-primary">check details</a>
+    </div>
+  </div>
+  {{!--
+  {{#each classes}}
+  <div class="card-aula-6t54R0">
+    <img class="rectangle-121-5fRA8d" src={{imageUrl}} />
+    <img class="rectangle-122-5fRA8d" src="img/rectangle-122@2x.png" />
+    <div class="gabriel-silva-5fRA8d playfairdisplay-normal-shark-16px">{{title}}</div>
+    <div class="x15-students-5fRA8d playfairdisplay-normal-shark-16px">15 students</div>
+    <div class="x23m-5fRA8d playfairdisplay-normal-shark-16px">23m</div>
+    <div class="frame-43-5fRA8d">
+      <div class="learn-how-to-pl-e-in-every-tons-LOrPHR playfairdisplay-bold-shark-18px">
+        {{description}}
+      </div>
+    </div>
+    <div class="group-488-5fRA8d">
+      <div class="ellipse-45-XxIOyX"></div>
+      <div class="group-115-XxIOyX">
+        <img class="vector-xgqn26" src="img/vector-34@2x.png" /><img class="vector-5SILtC" src="img/vector-35@2x.png" />
+        <a href="/buy-class"><img class="vector-dOmtcN" src="img/vector-36@2x.png" /></a>
+      </div>
+    </div>
+    <div class="group-489-5fRA8d">
+      <div class="group-482-Mw8uXD">
+        <div class="ellipse-46-OMS0YR"></div>
+        <img class="vector-OMS0YR" src="img/vector-37@2x.png" />
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+
+
+
+  --}}

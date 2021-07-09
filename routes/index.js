@@ -15,13 +15,15 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/student",  requireLogin, async (req, res, next) =>{
-  const userDetail = await User.findOne({id:req.session.currentUser._id})
+  const userDetail = await User.findById(req.session.currentUser._id)
   console.log(userDetail);
   res.render("student-home-desktop", {userDetail});
 });
 
-router.get("/teacher", requireLogin, (req, res, next) => {
-  res.render("teacher-home-desktop");
+router.get("/teacher", requireLogin, async (req, res, next) => {
+  const userDetail = await User.findById(req.session.currentUser._id)
+  console.log(userDetail);
+  res.render("teacher-home-desktop", {userDetail});
 });
 
 module.exports = router;

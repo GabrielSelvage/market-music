@@ -5956,3 +5956,17 @@ transform: scale(1.1);
 .signup-up-teacher{
   height: 750px !important;
 }
+
+.price-bold{
+  font-weight: bolder;
+  margin-top: 16px;
+};
+.card-img-top{
+  height: 1000px !important;
+};
+.card-body{
+  padding:0;
+  margin:0px !important;
+  border: 2px solid black !important;
+  height: 156px;
+};
