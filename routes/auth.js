@@ -39,7 +39,11 @@ router.post("/login", async (req, res) => {
         //Passwords match
         //Initializing the session with the current user
         req.session.currentUser = user;
-        res.redirect('/student');
+        if (user.role){
+          res.redirect('/teacher');
+        } else{
+          res.redirect('/student');
+        }
       }else{
         //Password don't match
         res.render("auth/login", {
@@ -100,7 +104,9 @@ router.get("/beteacher", requireLogin, (req, res)=>{
 
 router.post("/beteacher", async (req, res) => {
   const {name, description, instrument}= req.body;
-  await User.findByIdAndUpdate(
+  console.log("REQ BODYYYY",req.body)
+  console.log("Name, description, instrument",name, description, instrument)
+  await User.findByIdAndUpdate(req.params.userId,
     {description: description,
     instrument: instrument,
     name: name,

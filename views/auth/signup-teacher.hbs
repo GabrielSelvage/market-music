@@ -1,5 +1,5 @@
 <input type="hidden" id="anPageName" name="page" value="signup-teacher" />
-    <form class="signup-teacher screen" name="form2" action="form2" method="post">
+    <form class="signup-teacher screen" name="form2" action="/signup-teacher" method="post" enctype="multipart/form-data">
       <div class="background-blur-eV73GM">
         <img class="ellipse-20-uOxfNB" src="img/ellipse-20-1@2x.png" /><img
           class="ellipse-21-uOxfNB"
@@ -8,14 +8,14 @@
       </div>
       <div class="cards-completo-eV73GM">
         <div class="upload-form-button-96e7p7">
-          <div class="rectangle-108-64AJhh"></div>
+          <div class="rectangle-108-64AJhh signup-up-teacher"></div>
           <div class="i-have-an-acount-64AJhh manrope-bold-persian-green-16px">I have an acount</div>
           <div class="sign-up-64AJhh playfairdisplay-bold-shark-20px">Sign up</div>
           <div class="email-form-64AJhh">
             <div class="rectangle-109-YJeNI0 border-1px-black-2"></div>
             <input
               class="email-YJeNI0 playfairdisplay-normal-black-16px"
-              name="email"
+              name="username"
               placeholder="Email"
               type="text"
             />
@@ -34,11 +34,10 @@
             />
           </div>
           <input
-            class="upload-photo-64AJhh playfairdisplay-normal-black-16px"
-            name="uploadphoto"
+            class="upload-photo-64AJhh playfairdisplay-normal-black-16px inp-teacher"
+            name="image"
             placeholder="Upload image"
-            type="text"
-          />
+            type="file"/>
           <div class="password-form-64AJhh border-1px-black-2">
             <div class="group-515-nscbkX">
               <input
@@ -55,15 +54,15 @@
           <p class="use-at-least-on-and-one-symbol-64AJhh playfairdisplay-normal-black-12px">
             Use at least on character and one symbol
           </p>
-        </div>
+        {{!-- </div>
         <p class="by-signing-up-y-privacy-notice-96e7p7">
           By signing up, you agree to the Terms and Conditions and Privacy Policy. California residents, see our CA
           Privacy Notice.
-        </p>
-        <p class="this-site-is-pr-f-service-apply-96e7p7 playfairdisplay-normal-black-12px">
+        </p> --}}
+        {{!-- <p class="this-site-is-pr-f-service-apply-96e7p7 playfairdisplay-normal-black-12px">
           This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
-        </p>
-        <div class="components-checkbox-inactive-96e7p7"></div>
+        </p> --}}
+        {{!-- <div class="components-checkbox-inactive-96e7p7"></div>
         <div class="group-517-96e7p7">
           <p class="send-me-product-rogress-reports-qrNsKX playfairdisplay-normal-black-12px">
             Send me product updates, Premium offers, and weekly progress reports.
@@ -71,24 +70,23 @@
           <div class="components-checkbox-active-qrNsKX">
             <div class="dropshadow-3-Foq04G">
               <div class="shadow-2-exxh1t"></div>
-            </div>
+            </div> --}}
             <div class="icons16px-check-Foq04G"></div>
           </div>
         </div>
         <a href="javascript:SubmitForm('form2')">
-          <div class="frame-20-96e7p7 smart-layers-pointers">
+          <div class="frame-20-96e7p7 smart-layers-pointers btn-teacher">
             <div class="agree-and-sign-up-R9FbMy manrope-bold-white-16px">Agree and Sign up</div>
           </div>
           </a>
-        <div class="upload-image-button-96e7p7">
+        {{!-- <div class="upload-image-button-96e7p7">
           <div class="button-add-32E33S">
             <img class="add-class-nSNz8R smart-layers-pointers" src="img/add-class@2x.png" />
           </div>
-        </div>
+        </div> --}}
       </div>
     </form>
     <script>
-
       if (!HTMLFormElement.prototype.reportValidity) {
         HTMLFormElement.prototype.reportValidity = function () {
           if (this.checkValidity()) return true;
@@ -99,7 +97,6 @@
           return false;
         };
       }
-
       function SubmitForm(form_name) {
         var form = document.getElementsByName(form_name)[0];
         if (form.reportValidity()) {

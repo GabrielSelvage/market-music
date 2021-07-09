@@ -2009,7 +2009,7 @@ transform: scale(1.1);
 .signup-teacher .upload-photo-64AJhh {
   background-color: transparent;
   border: 0;
-  height: 24px;
+  height: 34px;
   left: 90px;
   letter-spacing: 0.00px;
   line-height: 24px;
@@ -2020,8 +2020,14 @@ transform: scale(1.1);
   text-align: left;
   top: 328px;
   white-space: nowrap;
-  width: 99px;
+  width: 360px;
 }
+
+.inp-teacher{
+  margin-top: -10px !important;
+  margin-left: -50px;
+}
+
 .signup-teacher .upload-photo-64AJhh::placeholder {
   color: #0000005c;
 }
@@ -5940,4 +5946,13 @@ transform: scale(1.1);
 
 .btn-sig{
   margin-left: -10px;
+}
+
+.btn-teacher{
+  margin-top: -60px;
+  margin-left: -5px;
+}
+
+.signup-up-teacher{
+  height: 750px !important;
 }
