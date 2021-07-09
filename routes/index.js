@@ -1,3 +1,4 @@
+const User = require("../models/User.model");
 const router = require("express").Router();
 
 function requireLogin(req, res, next){
@@ -13,8 +14,10 @@ router.get("/", (req, res, next) => {
   res.render("01");
 });
 
-router.get("/student",  /*requireLogin, */(req, res, next) =>{
-  res.render("student-home-desktop");
+router.get("/student",  requireLogin, async (req, res, next) =>{
+  const userDetail = await User.findOne({id:req.session.currentUser._id})
+  console.log(userDetail);
+  res.render("student-home-desktop", {userDetail});
 });
 
 router.get("/teacher", requireLogin, (req, res, next) => {

@@ -104,14 +104,15 @@ router.get("/beteacher", requireLogin, (req, res)=>{
 
 router.post("/beteacher", async (req, res) => {
   const {name, description, instrument}= req.body;
-  console.log("REQ BODYYYY",req.body)
+  console.log("Current user",req.session.currentUser._id)
   console.log("Name, description, instrument",name, description, instrument)
-  await User.findByIdAndUpdate(req.params.userId,
+  await User.findByIdAndUpdate(req.session.currentUser._id,
     {description: description,
     instrument: instrument,
     name: name,
     role: "teacher",
   });
+  console.log(name, description, instrument)
   res.redirect("/teacher");
 });
 
