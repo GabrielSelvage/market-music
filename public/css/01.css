@@ -2701,6 +2701,8 @@ transform: scale(1.1);
   width: auto;
 }
 
+
+
 .all-MYxMb0 a:hover{
   color: var(--white);
   text-decoration: none;
@@ -5294,6 +5296,15 @@ transform: scale(1.1);
   top: calc(50.00% - 12px);
   white-space: nowrap;
   width: 205px;
+}
+
+.price{
+  margin-top: -330px !important;
+}
+
+.inp-create-class{
+  margin-top: -350px !important;
+  margin-left: -70px !important;
 }
 
 .upload-lesson .price-5KXCM5::placeholder {

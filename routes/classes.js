@@ -14,13 +14,14 @@ router.post("/create-class", fileUpload.single("image"), async (req, res) => {
     if (req.file) {
       fileUrlOnCloudinary = req.file.path; 
     }
-  const {title, description, price, about} = req.body;
+  const {title, description, price, about, level} = req.body;
     await Class.create({
       title,
       description,
       price,
       imageUrl: fileUrlOnCloudinary,
       about,
+      level,
   });
   console.log("create");
   res.redirect("/classes");
@@ -30,11 +31,42 @@ router.post("/create-class", fileUpload.single("image"), async (req, res) => {
 });
 
 router.get("/classes", async (req, res) => {
+  /*const classDetail = await Class.findById(req.session.currentClass._id)*/
   const classes = await Class.find().sort({ title: 1 });
   console.log(classes);
-  res.render("classes/class-list", { classes });
+  res.render("classes/class-list", {classes/*,classDetail*/});
 });
 
+
+router.get("/classes-pay", async (req, res) => {
+  let paidClasses = []
+  let freeClasses = []
+  classDetail = await Class.find({})
+  console.log(classDetail)
+  for (let i = 0; i<classDetail.length; i++){
+    if (classDetail[i].price > 0){
+      paidClasses.push(classDetail[i])
+    } else{
+      freeClasses.push(classDetail[i])
+    }
+  }
+  res.redirect("/payed-classes", paidClasses)
+});
+
+router.get("/classes-free", async (req, res) => {
+  let paidClasses = []
+  let freeClasses = []
+  classDetail = await Class.find({})
+  console.log(classDetail)
+  for (let i = 0; i<classDetail.length; i++){
+    if (classDetail[i].price > 0){
+      paidClasses.push(classDetail[i])
+    } else{
+      freeClasses.push(classDetail[i])
+    }
+  }
+  res.redirect("/payed-classes", freeClasses);
+});
 
 
 router.post("/classes/:classId/delete", async (req, res) => {
