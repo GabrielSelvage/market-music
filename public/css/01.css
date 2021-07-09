@@ -5913,3 +5913,31 @@ transform: scale(1.1);
   color: white;
   border-style: none;
 }
+
+.btn-update{
+  margin-left: 7% !important;
+  margin-right: auto !important;
+}
+
+.description-update{
+  margin-top: -180px !important;
+  width: 392px !important;
+  height: 200px !important;
+}
+
+.btn-up{
+  margin-top: -270px !important;
+}
+
+.signup-up{
+  height: 550px !important;
+}
+
+.btn-signup{
+  margin-top: -50px;
+  margin-left: -5px;
+}
+
+.btn-sig{
+  margin-left: -10px;
+}
