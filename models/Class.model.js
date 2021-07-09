@@ -21,6 +21,12 @@ const classSchema = new Schema({
   },
   level: {
     type: String,
+  },
+  myClasses:{
+    type: Array,
+  },
+  teacher: {
+    type: String,
   }
 });
 

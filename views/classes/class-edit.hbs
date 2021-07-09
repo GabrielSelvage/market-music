@@ -1,26 +1,67 @@
-<h1>Class Edit</h1>
-
-<div class="popUp create-class">
-    
-    <form action="/classes/:classId/edit" method="POST" enctype="multipart/form-data">
-        <label>Title</label>
-        <input type="text" name="title" />
-            <br>
-        <label>Description</label>
-        <textarea row="5" cols="20" name="description"></textarea>
-            <br>
-        <label>Price</label>
-        <input type="text" name="price" />
-            <br>
-        {{!-- <label>Video</label>
-        <input type="file" name="video" /> --}}
-            <br>
-        <label>Image</label>
-        <input type="file" name="image" />
-            <br>
-        <label>Tags</label>
-        <input type="text" name="tags" />
-            <br>
-        <button type="submit">Update</button>
+    <form action="/create-class" method="POST" enctype="multipart/form-data">
+      <input type="hidden" id="anPageName" name="page" value="upload-lesson" />
+      <div class="upload-lesson screen">
+        <h1 class="title-FPckae">Profile / Upload CLass</h1>
+        <div class="gabriel-santos-FPckae">Gabriel Santos</div>
+        <div class="edit-profile-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">EDIT PROFILE</div>
+        <div class="upload-class-FPckae smart-layers-pointers">UPLOAD CLASS</div>
+        <div class="edit-class-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">EDIT CLASS</div>
+        <div class="account-settings-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">
+          ACCOUNT SETTINGS
+        </div>
+        <div class="password-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">PASSWORD</div>
+        <div class="social-profiles-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">SOCIAL PROFILES</div>
+        <div class="email-notifications-FPckae smart-layers-pointers playfairdisplay-normal-shark-16px">
+          EMAIL NOTIFICATIONS
+        </div>
+        <div class="foto-gabriel-grupo-FPckae">
+          <img class="foto-gabriel-profile-dZuBXd" src={{classDetail.imageUrl}} />
+        </div>
+        <img class="line-61-FPckae" src="img/line-61@2x.png" /><img class="line-4-FPckae" src="img/line-4@1x.png" />
+        <div class="title-form-FPckae">
+          <div class="rectangle-title-wTwN8W border-1px-black"></div>
+          <input class="title-wTwN8W playfairdisplay-normal-gravel-16px" name="title" placeholder="Title" type="text" />
+        </div>
+        <div class="email-form-FPckae">
+          <div class="rectangle-109-5KXCM5 border-1px-black price"></div>
+          <input class="price-5KXCM5 playfairdisplay-normal-gravel-16px price" name="price" placeholder="Price" type="text" />
+        </div>
+        <div class="email-form-KaLBbF">
+          <div class="rectangle-109-IdHT9f border-1px-black price"></div>
+          <input
+            class="duration-IdHT9f playfairdisplay-normal-gravel-16px price"
+            name="about"
+            placeholder="About"
+            type="text"
+          />
+        </div>
+        <div class="email-form-viUVUt">
+          <div class="rectangle-109-XJTs7q border-1px-black price"></div>
+          <div class="class-level-XJTs7q price">
+          <select class="form-select" name="level" aria-label="Default select example">
+            <option selected>Class Level</option>
+            <option value="level">Beginner</option>
+            <option value="level">Intermediate</option>
+            <option value="level">Advanced</option>
+          </select>
+          </div>
+        </div>
+        <div class="email-form-fYBxK9 price inp-create-class"><div class="upload-video-class-F3guqA"><input type="file" placeholder="Upload video class"></div></div>
+        <div class="email-form-vBParL price inp-create-class"><div class="upload-cover-image-EGZrVt"><input type="file" placeholder="cover image" name="image"></div></div>
+        <div class="description-form-FPckae">
+          <div class="description-sC9ASi border-1px-black"></div>
+          <textarea
+            class="descprition-sC9ASi playfairdisplay-normal-gravel-16px"
+            name="description"
+            placeholder="Description"
+            type="text"
+          ></textarea>
+        </div>
+          <button type="submit">
+        <div class="button-confirm-upload-FPckae smart-layers-pointers price"><div class="upload-s7kmxc">
+            Upload
+          </div>
+        </div>
+          </button>
+      </div>
     </form>
-</div>

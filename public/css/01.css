@@ -1748,7 +1748,7 @@ transform: scale(1.1);
   text-align: left;
   top: 12px;
   white-space: nowrap;
-  width: 44px;
+  width: 360px;
 }
 .signup-teacher .email-YJeNI0::placeholder {
   color: #0000005c;
@@ -1885,7 +1885,7 @@ transform: scale(1.1);
   text-align: left;
   top: 0px;
   white-space: nowrap;
-  width: 71px;
+  width: 360px;
 }
 .signup-teacher .password-nxV3zw::placeholder {
   color: #0000005c;
@@ -5981,3 +5981,11 @@ transform: scale(1.1);
   border: 2px solid black !important;
   height: 156px;
 };
+
+.link-class{
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: underline overline;
+  text-decoration: line-through;
+}

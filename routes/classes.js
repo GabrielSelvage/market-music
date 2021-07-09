@@ -15,16 +15,22 @@ router.post("/create-class", fileUpload.single("image"), async (req, res) => {
       fileUrlOnCloudinary = req.file.path; 
     }
   const {title, description, price, about, level} = req.body;
-    await Class.create({
+  await Class.create({
       title,
       description,
       price,
       imageUrl: fileUrlOnCloudinary,
       about,
       level,
+      teacher: req.session.currentUser.name,
   });
   console.log("create");
-  res.redirect("/classes");
+  //res.redirect(`/classes/${req.session.currentUser._id}/myclasses`);
+  res.redirect("/classes")
+  // await User.findByIdAndUpdate(req.session.currentUser._id, {
+  //   $push: {myclasses: newClass}
+  // });
+  //console.log(newClass);
 } catch (error) {
   console.log("An error accurred", error);
 }
@@ -37,6 +43,12 @@ router.get("/classes", async (req, res) => {
   res.render("classes/class-list", {classes/*,classDetail*/});
 });
 
+router.get("/myclasses", async (req, res) => {
+  /*const classDetail = await Class.findById(req.session.currentClass._id)*/
+  const myclass = await Class.find().sort({ title: 1 });
+  console.log(myclass);
+  res.render("classes/my-classes",{ myclass});
+});
 
 router.get("/classes-pay", async (req, res) => {
   let paidClasses = []
@@ -71,7 +83,7 @@ router.get("/classes-free", async (req, res) => {
 
 router.post("/classes/:classId/delete", async (req, res) => {
   await Class.findByIdAndRemove(req.params.classId);
-  res.redirect("/classes/class-list");
+  res.redirect("/myclasses");
 });
 
 
@@ -90,17 +102,22 @@ router.post("/classes/:classId/edit", async (req, res) => {
     if (req.file) {
       fileUrlOnCloudinaryImage = req.file.path; 
     }
+  //   await User.findByIdAndUpdate(req.session.currentUser._id, {
+  //     $push: {favorites: req.params.moviesId}
+  // })
+
   const {title, description, price, about} = req.body;
-    await Class.create({
+    await Class.findByIdAndUpdate( 
+      req.params.classId,
+      $push: { 
       title,
       description,
       price,
-      //video: fileUrlOnCloudinaryVideo,
       imageUrl: fileUrlOnCloudinaryImage,
-      about,
-  });
+      about
+      });
   console.log("edit");
-  res.redirect("/classes");
+  res.redirect("/classes/:classId/edit");
 } catch (error) {
   console.log("An error accurred", error);
 }

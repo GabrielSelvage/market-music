@@ -88,17 +88,20 @@
     <div class="container">
       <div class="row">
         {{#each classes}}
+        <a href="/class-detail">
         <div class="col-md-4">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src={{imageUrl}} alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">{{title}}</h5>
+              <p class="card-text">{{name}}</p>
               <p class="card-text">{{description}}</p>
-              <p class="card-text price-bold">{{price}}</p>
+              <p class="card-text price-bold">{{price}}¢</p>
               <a href="#" class="btn btn-primary">check details</a>
             </div>
           </div>
         </div>
+        </a>
         {{/each}}
       </div>
     </div>

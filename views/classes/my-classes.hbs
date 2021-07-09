@@ -5,7 +5,7 @@
 <div class="lessons-filter screen">
   {{!-- <img class="line-4-6t54R0" src="img/line-4@1x.png" /> --}}
   <div class="guitar-lesson-6t54R0">
-    <div class="guitar-lessons-89XVyM">{{classDetail.title}} Lessons</div>
+    <div class="guitar-lessons-89XVyM">{{myclasses.title}} Lessons</div>
     <div class="x121-results-89XVyM">121 results</div>
   </div>
   <div class="menu-lateral-filtro-6t54R0">
@@ -87,18 +87,31 @@
   <div class="box-classes" style="border: 0px solid black; margin: 20px 0 0 370px; width: 880px; height: 5000px">
     <div class="container">
       <div class="row">
-        {{#each classes}}
+        {{#each myclass}}
+        <a href="/class-detail">
         <div class="col-md-4">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src={{imageUrl}} alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">{{title}}</h5>
+              <p class="card-text">{{name}}</p>
               <p class="card-text">{{description}}</p>
-              <p class="card-text price-bold">{{price}}</p>
+              <p class="card-text price-bold">{{price}}¢</p>
+              <form action="/classes/{{_id}}/edit" method="POST">
+                <button type="submit">
+                  Edit
+                </button>
+              </form>
+              <form action="/classes/{{_id}}/delete" method="POST">
+                <button type="submit">
+                  Delete
+                </button>
+              </form>
               <a href="#" class="btn btn-primary">check details</a>
             </div>
           </div>
         </div>
+        </a>
         {{/each}}
       </div>
     </div>
